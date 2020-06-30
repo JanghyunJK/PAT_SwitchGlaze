@@ -1,0 +1,136 @@
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>export_variableto_csv_variables_for_bipvpce</name>
+  <uid>c86cdcc1-f9e4-4139-ad31-47f3a1ba6e4c</uid>
+  <version_id>4563c4cc-5089-41ea-bf02-baf013e431f5</version_id>
+  <version_modified>20200613T191902Z</version_modified>
+  <xml_checksum>6BDEFB84</xml_checksum>
+  <class_name>ExportVariabletoCSVVariablesForBIPVPCE</class_name>
+  <display_name>ExportVariabletoCSV_VariablesForBIPV_PCE</display_name>
+  <description>Exports window's thermochromic specification temperature and incident angle data to a csv file. Associated vertices information are also saved in the csv file.</description>
+  <modeler_description>This measure searches for the window surfaces that has BIPVs and exports variables (thermochromic specification temperature and incident angle) included in the eplusout sql file (Add Output Variable measures should be defined beforehand with output variables: Surface Window Thermochromic Layer Property Specification Temperature &amp; Surface Outside Face Beam Solar Incident Angle Cosine Value) and saves it to a csv file. Vertices information for those surfaces are also saved in the csv file.</modeler_description>
+  <arguments>
+    <argument>
+      <name>variable_name_first</name>
+      <display_name>Enter First Variable Name.</display_name>
+      <type>String</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Surface Window Thermochromic Layer Property Specification Temperature</default_value>
+    </argument>
+    <argument>
+      <name>variable_name_second</name>
+      <display_name>Enter Second Variable Name.</display_name>
+      <type>String</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Surface Outside Face Beam Solar Incident Angle Cosine Value</default_value>
+    </argument>
+    <argument>
+      <name>reporting_frequency</name>
+      <display_name>Reporting Frequency.</display_name>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Zone Timestep</default_value>
+      <choices>
+        <choice>
+          <value>Hourly</value>
+          <display_name>Hourly</display_name>
+        </choice>
+        <choice>
+          <value>Zone Timestep</value>
+          <display_name>Zone Timestep</display_name>
+        </choice>
+      </choices>
+    </argument>
+  </arguments>
+  <outputs/>
+  <provenances/>
+  <tags>
+    <tag>Reporting.QAQC</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Model Articulation</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Model Articulation</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ReportingMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Model Articulation</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>report.html.in</filename>
+      <filetype>in</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>3501204C</checksum>
+    </file>
+    <file>
+      <filename>example_model.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>CBCC1FAC</checksum>
+    </file>
+    <file>
+      <filename>ExportVariabletoCSV_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>4404BD88</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>1.8.3</identifier>
+        <min_compatible>1.8.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>03CE62A5</checksum>
+    </file>
+  </files>
+</measure>

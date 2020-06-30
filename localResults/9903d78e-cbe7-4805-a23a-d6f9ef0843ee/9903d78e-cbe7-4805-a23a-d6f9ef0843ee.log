@@ -1,0 +1,296 @@
+# Logfile created on 2020-06-30 19:29:01 +0000 by logger.rb/61378
+[19:29:01.686226 INFO] Server host is http://web:80
+[19:29:01.686342 INFO] Analysis directory is /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20
+[19:29:01.686409 INFO] Simulation directory is /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/data_point_9903d78e-cbe7-4805-a23a-d6f9ef0843ee
+[19:29:01.686453 INFO] Run datapoint type/file is 
+[19:29:01.686504 INFO] Starting initialize_worker for datapoint 9903d78e-cbe7-4805-a23a-d6f9ef0843ee
+[19:29:01.687066 INFO] Downloading analysis zip from http://web:80/analyses/72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/download_analysis_zip
+[19:29:02.207306 INFO] Extracting analysis zip to /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20
+[19:29:02.220325 INFO] Zip: Extracting lib/resources/ASHRAE_zone12_Spec.idf
+[19:29:02.225112 INFO] Zip: Extracting lib/resources/ASHRAE_zone3_Spec.idf
+[19:29:02.225925 INFO] Zip: Extracting lib/resources/ASHRAE_zone456_Spec.idf
+[19:29:02.226777 INFO] Zip: Extracting lib/resources/ASHRAE_zone78_Spec.idf
+[19:29:02.227500 INFO] Zip: Extracting lib/resources/GlzSys19_13F-air-9_Spec.idf
+[19:29:02.229301 INFO] Zip: Extracting lib/resources/GlzSys20_14F-air-3000_Spec.idf
+[19:29:02.231014 INFO] Zip: Extracting lib/resources/GlzSys21_13F-air-3000_Spec.idf
+[19:29:02.232777 INFO] Zip: Extracting lib/resources/GlzSys_10-air-9_Spec.idf
+[19:29:02.234451 INFO] Zip: Extracting lib/resources/GlzSys_10F-air-3000_Spec.idf
+[19:29:02.236097 INFO] Zip: Extracting lib/resources/GlzSys_11F-air-3000_Spec.idf
+[19:29:02.237768 INFO] Zip: Extracting lib/resources/GlzSys_16095-air-3000_Spec.idf
+[19:29:02.239409 INFO] Zip: Extracting lib/resources/GlzSys_16095-air-9_Spec.idf
+[19:29:02.241121 INFO] Zip: Extracting lib/resources/GlzSys_6374-air-3000_Spec.idf
+[19:29:02.242779 INFO] Zip: Extracting lib/resources/GlzSys_Dark_PV_Spec.idf
+[19:29:02.243819 INFO] Zip: Extracting lib/resources/GlzSys_Light_PV_Spec.idf
+[19:29:02.244854 INFO] Zip: Extracting lib/resources/GlzSys_Thermochromic_30C.idf
+[19:29:02.246137 INFO] Zip: Extracting lib/resources/GlzSys_Thermochromic_35C.idf
+[19:29:02.247426 INFO] Zip: Extracting lib/resources/GlzSys_Thermochromic_40C.idf
+[19:29:02.248858 INFO] Zip: Extracting lib/resources/SG_zone12_Spec.idf
+[19:29:02.250162 INFO] Zip: Extracting lib/resources/SG_zone3_Spec.idf
+[19:29:02.251478 INFO] Zip: Extracting lib/resources/SG_zone456_Spec.idf
+[19:29:02.253272 INFO] Zip: Extracting lib/resources/SG_zone78_Spec.idf
+[19:29:02.255082 INFO] Zip: Extracting lib/resources/Window_PV_No_frame_Spec_Spec.idf
+[19:29:02.256103 INFO] Zip: Extracting lib/resources/Window_PV_frame_Spec.idf
+[19:29:02.257133 INFO] Zip: Extracting measures/AddMeter/
+[19:29:02.257408 INFO] Zip: Extracting measures/AddMeter/LICENSE.md
+[19:29:02.257985 INFO] Zip: Extracting measures/AddMeter/New folder/
+[19:29:02.258205 INFO] Zip: Extracting measures/AddMeter/README.md
+[19:29:02.258694 INFO] Zip: Extracting measures/AddMeter/README.md.erb
+[19:29:02.259178 INFO] Zip: Extracting measures/AddMeter/measure.rb
+[19:29:02.259732 INFO] Zip: Extracting measures/AddMeter/measure.xml
+[19:29:02.260319 INFO] Zip: Extracting measures/AddMeter/tests/
+[19:29:02.260552 INFO] Zip: Extracting measures/AddMeter/tests/AddMeter_Test.rb
+[19:29:02.261076 INFO] Zip: Extracting measures/AddOutputVariable/
+[19:29:02.261298 INFO] Zip: Extracting measures/AddOutputVariable/LICENSE.md
+[19:29:02.261888 INFO] Zip: Extracting measures/AddOutputVariable/README.md
+[19:29:02.262381 INFO] Zip: Extracting measures/AddOutputVariable/README.md.erb
+[19:29:02.262854 INFO] Zip: Extracting measures/AddOutputVariable/measure.rb
+[19:29:02.263379 INFO] Zip: Extracting measures/AddOutputVariable/measure.xml
+[19:29:02.263938 INFO] Zip: Extracting measures/AddOutputVariable/tests/
+[19:29:02.264150 INFO] Zip: Extracting measures/AddOutputVariable/tests/AddOutputVariable_Test.rb
+[19:29:02.264700 INFO] Zip: Extracting measures/ChangeBuildingLocation/
+[19:29:02.264914 INFO] Zip: Extracting measures/ChangeBuildingLocation/LICENSE.md
+[19:29:02.265471 INFO] Zip: Extracting measures/ChangeBuildingLocation/README.md
+[19:29:02.265999 INFO] Zip: Extracting measures/ChangeBuildingLocation/README.md.erb
+[19:29:02.266514 INFO] Zip: Extracting measures/ChangeBuildingLocation/measure.rb
+[19:29:02.267196 INFO] Zip: Extracting measures/ChangeBuildingLocation/measure.xml
+[19:29:02.267773 INFO] Zip: Extracting measures/ChangeBuildingLocation/resources/
+[19:29:02.267995 INFO] Zip: Extracting measures/ChangeBuildingLocation/resources/epw.rb
+[19:29:02.268974 INFO] Zip: Extracting measures/ChangeBuildingLocation/resources/os_lib_helper_methods.rb
+[19:29:02.269616 INFO] Zip: Extracting measures/ChangeBuildingLocation/resources/stat_file.rb
+[19:29:02.270195 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/
+[19:29:02.270424 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/USA_MA_Boston-Logan.Intl.AP.725090_TMY3.ddy
+[19:29:02.271181 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/USA_MA_Boston-Logan.Intl.AP.725090_TMY3.epw
+[19:29:02.282009 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/USA_MA_Boston-Logan.Intl.AP.725090_TMY3.stat
+[19:29:02.282840 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/USA_WA_Renton.Muni.AP.727934_TMY3.ddy
+[19:29:02.283199 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/USA_WA_Renton.Muni.AP.727934_TMY3.epw
+[19:29:02.298289 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/USA_WA_Renton.Muni.AP.727934_TMY3.stat
+[19:29:02.299000 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/another_weather_file.ddy
+[19:29:02.299459 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/another_weather_file.epw
+[19:29:02.314328 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/another_weather_file.stat
+[19:29:02.315155 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/change_building_location_test.rb
+[19:29:02.315565 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/multiyear.ddy
+[19:29:02.316010 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/multiyear.epw
+[19:29:02.316400 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/multiyear.stat
+[19:29:02.316988 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/test.osm
+[19:29:02.320796 INFO] Zip: Extracting measures/ChangeBuildingLocation/tests/test.osw
+[19:29:02.321768 INFO] Zip: Extracting measures/ServerDirectoryCleanup/
+[19:29:02.321948 INFO] Zip: Extracting measures/ServerDirectoryCleanup/LICENSE.md
+[19:29:02.322341 INFO] Zip: Extracting measures/ServerDirectoryCleanup/measure.rb
+[19:29:02.322729 INFO] Zip: Extracting measures/ServerDirectoryCleanup/measure.xml
+[19:29:02.323119 INFO] Zip: Extracting measures/ServerDirectoryCleanup/tests/
+[19:29:02.323276 INFO] Zip: Extracting measures/ServerDirectoryCleanup/tests/ServerDirectoryCleanup_test.rb
+[19:29:02.323665 INFO] Zip: Extracting measures/ServerDirectoryCleanup/tests/USA_CO_Golden-NREL.724666_TMY3.epw
+[19:29:02.339655 INFO] Zip: Extracting measures/ServerDirectoryCleanup/tests/example_model.osm
+[19:29:02.342398 INFO] Zip: Extracting measures/WindowPV_reporting/
+[19:29:02.342638 INFO] Zip: Extracting measures/WindowPV_reporting/measure.rb
+[19:29:02.343338 INFO] Zip: Extracting measures/WindowPV_reporting/measure.xml
+[19:29:02.343835 INFO] Zip: Extracting measures/WindowPV_reporting/resources/
+[19:29:02.343987 INFO] Zip: Extracting measures/WindowPV_reporting/resources/os_lib_helper_methods.rb
+[19:29:02.344545 INFO] Zip: Extracting measures/WindowPV_reporting/resources/report.html.in
+[19:29:02.344981 INFO] Zip: Extracting measures/WindowPV_reporting/tests/
+[19:29:02.345131 INFO] Zip: Extracting measures/WindowPV_reporting/tests/USA_CO_Golden-NREL.724666_TMY3.epw
+[19:29:02.360678 INFO] Zip: Extracting measures/WindowPV_reporting/tests/example_model.osm
+[19:29:02.362601 INFO] Zip: Extracting measures/WindowPV_reporting/tests/ubi_qd_reporting_test.rb
+[19:29:02.363131 INFO] Zip: Extracting measures/a_inject_window_specific_idf_objects/
+[19:29:02.363309 INFO] Zip: Extracting measures/a_inject_window_specific_idf_objects/LICENSE.md
+[19:29:02.363764 INFO] Zip: Extracting measures/a_inject_window_specific_idf_objects/measure.rb
+[19:29:02.364326 INFO] Zip: Extracting measures/a_inject_window_specific_idf_objects/measure.xml
+[19:29:02.364862 INFO] Zip: Extracting measures/a_inject_window_specific_idf_objects/tests/
+[19:29:02.365017 INFO] Zip: Extracting measures/a_inject_window_specific_idf_objects/tests/EnvelopeAndLoadTestModel_01.osm
+[19:29:02.372480 INFO] Zip: Extracting measures/a_inject_window_specific_idf_objects/tests/Example B - BlockEnergyCharge.idf
+[19:29:02.373101 INFO] Zip: Extracting measures/a_inject_window_specific_idf_objects/tests/measure_Test.rb
+[19:29:02.373570 INFO] Zip: Extracting measures/a_inject_window_specific_idf_objects/tests/test.osw
+[19:29:02.374428 INFO] Zip: Extracting measures/add_thermochromic_bipv/
+[19:29:02.374621 INFO] Zip: Extracting measures/add_thermochromic_bipv/measure.rb
+[19:29:02.509036 INFO] Zip: Extracting measures/add_thermochromic_bipv/measure.xml
+[19:29:02.509660 INFO] Zip: Extracting measures/add_thermochromic_bipv/resources/
+[19:29:02.509844 INFO] Zip: Extracting measures/add_thermochromic_bipv/resources/HVACSizing.Model.rb
+[19:29:02.510319 INFO] Zip: Extracting measures/add_thermochromic_bipv/resources/Standards.Construction.rb
+[19:29:02.510685 INFO] Zip: Extracting measures/add_thermochromic_bipv/resources/os_lib_helper_methods.rb
+[19:29:02.511089 INFO] Zip: Extracting measures/add_thermochromic_bipv/resources/os_lib_schedules.rb
+[19:29:02.511664 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/
+[19:29:02.511822 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/LICENSE.md
+[19:29:02.512169 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/README.md
+[19:29:02.512571 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/README.md.erb
+[19:29:02.512936 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/measure.rb
+[19:29:02.513538 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/measure.xml
+[19:29:02.514002 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/resources/
+[19:29:02.514165 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/resources/os_lib_geometry.rb
+[19:29:02.514785 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/resources/os_lib_helper_methods.rb
+[19:29:02.515227 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/resources/os_lib_model_generation.rb
+[19:29:02.515819 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/resources/os_lib_model_simplification.rb
+[19:29:02.516482 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/tests/
+[19:29:02.516643 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/tests/create_bar_from_building_type_ratios_test.rb
+[19:29:02.517071 INFO] Zip: Extracting measures/create_bar_from_building_type_ratios/tests/example_model.osm
+[19:29:02.519376 INFO] Zip: Extracting measures/create_typical_building_from_model/
+[19:29:02.519564 INFO] Zip: Extracting measures/create_typical_building_from_model/LICENSE.md
+[19:29:02.519935 INFO] Zip: Extracting measures/create_typical_building_from_model/README.md
+[19:29:02.520320 INFO] Zip: Extracting measures/create_typical_building_from_model/README.md.erb
+[19:29:02.520693 INFO] Zip: Extracting measures/create_typical_building_from_model/measure.rb
+[19:29:02.521280 INFO] Zip: Extracting measures/create_typical_building_from_model/measure.xml
+[19:29:02.521747 INFO] Zip: Extracting measures/create_typical_building_from_model/resources/
+[19:29:02.521908 INFO] Zip: Extracting measures/create_typical_building_from_model/resources/Model.hvac.rb
+[19:29:02.522329 INFO] Zip: Extracting measures/create_typical_building_from_model/resources/os_lib_helper_methods.rb
+[19:29:02.522776 INFO] Zip: Extracting measures/create_typical_building_from_model/resources/os_lib_model_generation.rb
+[19:29:02.523377 INFO] Zip: Extracting measures/create_typical_building_from_model/tests/
+[19:29:02.523529 INFO] Zip: Extracting measures/create_typical_building_from_model/tests/GenericGbxml.osm
+[19:29:02.526055 INFO] Zip: Extracting measures/create_typical_building_from_model/tests/LargeOffice04.osm
+[19:29:02.532919 INFO] Zip: Extracting measures/create_typical_building_from_model/tests/MidriseApartment.osm
+[19:29:02.542034 INFO] Zip: Extracting measures/create_typical_building_from_model/tests/SmallOffice.osm
+[19:29:02.650997 INFO] Zip: Extracting measures/create_typical_building_from_model/tests/USA_TX_Houston-Bush.Intercontinental.AP.722430_TMY3.epw
+[19:29:02.661469 INFO] Zip: Extracting measures/create_typical_building_from_model/tests/create_typical_building_from_model_test.rb
+[19:29:02.662027 INFO] Zip: Extracting measures/create_typical_building_from_model/tests/test.osw
+[19:29:02.662744 INFO] Zip: Extracting measures/create_typical_building_from_model/tests/test_hvac.rb
+[19:29:02.663163 INFO] Zip: Extracting measures/export_variableto_csv_variables_for_bipvpce/
+[19:29:02.663336 INFO] Zip: Extracting measures/export_variableto_csv_variables_for_bipvpce/measure.rb
+[19:29:02.663767 INFO] Zip: Extracting measures/export_variableto_csv_variables_for_bipvpce/measure.xml
+[19:29:02.664129 INFO] Zip: Extracting measures/export_variableto_csv_variables_for_bipvpce/resources/
+[19:29:02.664292 INFO] Zip: Extracting measures/export_variableto_csv_variables_for_bipvpce/resources/report.html.in
+[19:29:02.664688 INFO] Zip: Extracting measures/export_variableto_csv_variables_for_bipvpce/tests/
+[19:29:02.664858 INFO] Zip: Extracting measures/export_variableto_csv_variables_for_bipvpce/tests/ExportVariabletoCSV_test.rb
+[19:29:02.665223 INFO] Zip: Extracting measures/export_variableto_csv_variables_for_bipvpce/tests/example_model.osm
+[19:29:02.666454 INFO] Zip: Extracting measures/inject_idf_window_objects/
+[19:29:02.666607 INFO] Zip: Extracting measures/inject_idf_window_objects/LICENSE.md
+[19:29:02.666971 INFO] Zip: Extracting measures/inject_idf_window_objects/measure.rb
+[19:29:02.667403 INFO] Zip: Extracting measures/inject_idf_window_objects/measure.xml
+[19:29:02.667801 INFO] Zip: Extracting measures/inject_idf_window_objects/tests/
+[19:29:02.667974 INFO] Zip: Extracting measures/inject_idf_window_objects/tests/EnvelopeAndLoadTestModel_01.osm
+[19:29:02.672616 INFO] Zip: Extracting measures/inject_idf_window_objects/tests/Example B - BlockEnergyCharge.idf
+[19:29:02.673098 INFO] Zip: Extracting measures/inject_idf_window_objects/tests/measure_Test.rb
+[19:29:02.673453 INFO] Zip: Extracting measures/inject_idf_window_objects/tests/test.osw
+[19:29:02.674102 INFO] Zip: Extracting seeds/switchglaze/
+[19:29:02.674287 INFO] Zip: Extracting seeds/switchglaze.osm
+[19:29:02.678552 INFO] Zip: Extracting seeds/switchglaze/files/
+[19:29:02.678810 INFO] Zip: Extracting seeds/switchglaze/measures/
+[19:29:02.678958 INFO] Zip: Extracting seeds/switchglaze/run/
+[19:29:02.679115 INFO] Zip: Extracting seeds/switchglaze/workflow.osw
+[19:29:02.679507 INFO] Zip: Extracting weather/DEU_Hamburg.101470_IWEC.ddy
+[19:29:02.679965 INFO] Zip: Extracting weather/DEU_Hamburg.101470_IWEC.epw
+[19:29:02.699581 INFO] Zip: Extracting weather/DEU_Hamburg.101470_IWEC.stat
+[19:29:02.700399 INFO] Zip: Extracting weather/JPN_Tokyo.Hyakuri.477150_IWEC.ddy
+[19:29:02.700844 INFO] Zip: Extracting weather/JPN_Tokyo.Hyakuri.477150_IWEC.epw
+[19:29:02.710796 INFO] Zip: Extracting weather/JPN_Tokyo.Hyakuri.477150_IWEC.stat
+[19:29:02.711684 INFO] Zip: Extracting weather/SAU_Riyadh.404380_IWEC.ddy
+[19:29:02.712397 INFO] Zip: Extracting weather/SAU_Riyadh.404380_IWEC.epw
+[19:29:02.722976 INFO] Zip: Extracting weather/SAU_Riyadh.404380_IWEC.stat
+[19:29:02.723763 INFO] Zip: Extracting weather/SGP_Singapore.486980_IWEC.ddy
+[19:29:02.724205 INFO] Zip: Extracting weather/SGP_Singapore.486980_IWEC.epw
+[19:29:02.735995 INFO] Zip: Extracting weather/SGP_Singapore.486980_IWEC.stat
+[19:29:02.736924 INFO] Zip: Extracting weather/USA_AK_Fairbanks.Intl.AP.702610_TMY3.ddy
+[19:29:02.737542 INFO] Zip: Extracting weather/USA_AK_Fairbanks.Intl.AP.702610_TMY3.epw
+[19:29:02.755127 INFO] Zip: Extracting weather/USA_AK_Fairbanks.Intl.AP.702610_TMY3.stat
+[19:29:02.756049 INFO] Zip: Extracting weather/USA_AZ_Tucson.Intl.AP.722740_TMY3.ddy
+[19:29:02.756669 INFO] Zip: Extracting weather/USA_AZ_Tucson.Intl.AP.722740_TMY3.epw
+[19:29:02.772159 INFO] Zip: Extracting weather/USA_AZ_Tucson.Intl.AP.722740_TMY3.stat
+[19:29:02.773143 INFO] Zip: Extracting weather/USA_CA_San.Diego-Lindbergh.Field.722900_TMY3.ddy
+[19:29:02.773759 INFO] Zip: Extracting weather/USA_CA_San.Diego-Lindbergh.Field.722900_TMY3.epw
+[19:29:02.789373 INFO] Zip: Extracting weather/USA_CA_San.Diego-Lindbergh.Field.722900_TMY3.stat
+[19:29:02.790332 INFO] Zip: Extracting weather/USA_CO_Denver.Intl.AP.725650_TMY3.ddy
+[19:29:02.790962 INFO] Zip: Extracting weather/USA_CO_Denver.Intl.AP.725650_TMY3.epw
+[19:29:02.934949 INFO] Zip: Extracting weather/USA_CO_Denver.Intl.AP.725650_TMY3.stat
+[19:29:02.936472 INFO] Zip: Extracting weather/USA_FL_Tampa.Intl.AP.722110_TMY3.ddy
+[19:29:02.937212 INFO] Zip: Extracting weather/USA_FL_Tampa.Intl.AP.722110_TMY3.epw
+[19:29:02.955690 INFO] Zip: Extracting weather/USA_FL_Tampa.Intl.AP.722110_TMY3.stat
+[19:29:02.956823 INFO] Zip: Extracting weather/USA_GA_Atlanta-Hartsfield-Jackson.Intl.AP.722190_TMY3.ddy
+[19:29:02.957562 INFO] Zip: Extracting weather/USA_GA_Atlanta-Hartsfield-Jackson.Intl.AP.722190_TMY3.epw
+[19:29:02.977002 INFO] Zip: Extracting weather/USA_GA_Atlanta-Hartsfield-Jackson.Intl.AP.722190_TMY3.stat
+[19:29:02.978382 INFO] Zip: Extracting weather/USA_HI_Honolulu.Intl.AP.911820_TMY3.ddy
+[19:29:02.979231 INFO] Zip: Extracting weather/USA_HI_Honolulu.Intl.AP.911820_TMY3.epw
+[19:29:03.126186 INFO] Zip: Extracting weather/USA_HI_Honolulu.Intl.AP.911820_TMY3.stat
+[19:29:03.127030 INFO] Zip: Extracting weather/USA_MN_International.Falls.Intl.AP.727470_TMY3.ddy
+[19:29:03.127491 INFO] Zip: Extracting weather/USA_MN_International.Falls.Intl.AP.727470_TMY3.epw
+[19:29:03.139063 INFO] Zip: Extracting weather/USA_MN_International.Falls.Intl.AP.727470_TMY3.stat
+[19:29:03.139842 INFO] Zip: Extracting weather/USA_MN_Rochester.Intl.AP.726440_TMY3.ddy
+[19:29:03.140297 INFO] Zip: Extracting weather/USA_MN_Rochester.Intl.AP.726440_TMY3.epw
+[19:29:03.155958 INFO] Zip: Extracting weather/USA_MN_Rochester.Intl.AP.726440_TMY3.stat
+[19:29:03.156753 INFO] Zip: Extracting weather/USA_MT_Great.Falls.Intl.AP.727750_TMY3.ddy
+[19:29:03.157264 INFO] Zip: Extracting weather/USA_MT_Great.Falls.Intl.AP.727750_TMY3.epw
+[19:29:03.167492 INFO] Zip: Extracting weather/USA_MT_Great.Falls.Intl.AP.727750_TMY3.stat
+[19:29:03.168302 INFO] Zip: Extracting weather/USA_NM_Albuquerque.Intl.AP.723650_TMY3.ddy
+[19:29:03.168773 INFO] Zip: Extracting weather/USA_NM_Albuquerque.Intl.AP.723650_TMY3.epw
+[19:29:03.179049 INFO] Zip: Extracting weather/USA_NM_Albuquerque.Intl.AP.723650_TMY3.stat
+[19:29:03.179866 INFO] Zip: Extracting weather/USA_NY_Buffalo-Greater.Buffalo.Intl.AP.725280_TMY3.ddy
+[19:29:03.180310 INFO] Zip: Extracting weather/USA_NY_Buffalo-Greater.Buffalo.Intl.AP.725280_TMY3.epw
+[19:29:03.192502 INFO] Zip: Extracting weather/USA_NY_Buffalo-Greater.Buffalo.Intl.AP.725280_TMY3.stat
+[19:29:03.193407 INFO] Zip: Extracting weather/USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.ddy
+[19:29:03.193943 INFO] Zip: Extracting weather/USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.epw
+[19:29:03.207308 INFO] Zip: Extracting weather/USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.stat
+[19:29:03.208233 INFO] Zip: Extracting weather/USA_TX_El.Paso.Intl.AP.722700_TMY3.ddy
+[19:29:03.208817 INFO] Zip: Extracting weather/USA_TX_El.Paso.Intl.AP.722700_TMY3.epw
+[19:29:03.226567 INFO] Zip: Extracting weather/USA_TX_El.Paso.Intl.AP.722700_TMY3.stat
+[19:29:03.227598 INFO] Zip: Extracting weather/USA_WA_Port.Angeles-William.R.Fairchild.Intl.AP.727885_TMY3.ddy
+[19:29:03.228146 INFO] Zip: Extracting weather/USA_WA_Port.Angeles-William.R.Fairchild.Intl.AP.727885_TMY3.epw
+[19:29:03.242418 INFO] Zip: Extracting weather/USA_WA_Port.Angeles-William.R.Fairchild.Intl.AP.727885_TMY3.stat
+[19:29:03.243343 INFO] Zip: Extracting weather/USA_WA_Seattle-Tacoma.Intl.AP.727930_TMY3.ddy
+[19:29:03.243891 INFO] Zip: Extracting weather/USA_WA_Seattle-Tacoma.Intl.AP.727930_TMY3.epw
+[19:29:03.256677 INFO] Zip: Extracting weather/USA_WA_Seattle-Tacoma.Intl.AP.727930_TMY3.stat
+[19:29:03.259958 INFO] Downloading analysis.json from http://web:80/analyses/72a216d4-3a64-4cd6-8e04-b9bc3af7ff20.json
+[19:29:03.330476 INFO] Checking for presence of args file at /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/scripts/data_point/initialize.args
+[19:29:03.330560 INFO] Checking for presence of script file at /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/scripts/data_point/initialize.sh
+[19:29:03.330618 INFO] Finished worker initialization
+[19:29:03.330673 INFO] RestClient delete
+[19:29:03.330711 INFO] delete post_count = 1
+[19:29:03.347712 INFO] Downloading datapoint from http://web:80/data_points/9903d78e-cbe7-4805-a23a-d6f9ef0843ee.json
+[19:29:03.347814 INFO] get url post_count = 1
+[19:29:03.374053 INFO] Creating Workflow Manager instance
+[19:29:03.374179 INFO] Directory is /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/data_point_9903d78e-cbe7-4805-a23a-d6f9ef0843ee
+[19:29:03.374283 INFO] Opening run.log file '/mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/data_point_9903d78e-cbe7-4805-a23a-d6f9ef0843ee/run/run.log'
+[19:29:03.374538 WARN] Error finding Oscli: OPENSTUDIO_EXE_PATH not set
+[19:29:03.393067 WARN] Defaulting to fun Oscli via /usr/local/bin/openstudio
+[19:29:03.393271 INFO] Returning Oscli cmd: /usr/local/bin/openstudio --bundle /var/oscli/Gemfile --bundle_path /var/oscli/gems 
+[19:29:03.393512 INFO] Running workflow using cmd /usr/local/bin/openstudio --bundle /var/oscli/Gemfile --bundle_path /var/oscli/gems   run --workflow '/mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/data_point_9903d78e-cbe7-4805-a23a-d6f9ef0843ee/data_point.osw'  and writing log to /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/data_point_9903d78e-cbe7-4805-a23a-d6f9ef0843ee/oscli_simulation.log
+[19:29:19.014193 INFO] Oscli output: /var/oscli/gems/ruby/2.5.0/gems/openstudio-standards-0.2.11/lib/openstudio-standards/btap/btap.rb:56: warning: constant ::Fixnum is deprecated
+[openstudio.standards.Model] <1> Model has been assigned a weather file, but the file is not in the specified location of 'file:////mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/weather/SAU_Riyadh.404380_IWEC.epw'.
+[19:29:15.736426 WARN] Could not add loads for Plenum. Not expected for 90.1-2013
+[19:29:18.551027 WARN] [openstudio.standards.Construction] Requested U-value of 0.58 for Typical Insulated Exterior Mass Wall is too low given the other materials in the construction; insulation layer will not be modified.
+[19:29:18.551442 WARN] [openstudio.standards.Construction] Can only set the u-value of opaque constructions or simple glazing. U 0.60 SHGC 0.25 Dbl 2.5mm air is not opaque or simple glazing.
+[19:29:18.551675 WARN] [openstudio.standards.Construction] Can only set the u-value of opaque constructions or simple glazing. U 0.65 SHGC 0.25 Dbl Ref-C-H Clr 6mm/6mm Air is not opaque or simple glazing.
+[19:29:18.551758 WARN] [openstudio.standards.Construction] Requested U-value of 1.1686635536297982 for Typical Overhead Door is greater than the sum of the inside and outside resistance, and the max U-value (6.636 SI) is used instead.
+[19:29:18.551916 WARN] [openstudio.standards.Construction] Can only set the u-value of opaque constructions or simple glazing. Window_U_0.75_SHGC_0.35_Skylight_Frame_Width_2.339_in is not opaque or simple glazing.
+[19:29:18.552454 WARN] [openstudio.weather.Model] Could not find ground temperatures; will use generic temperatures, which will skew results.
+[19:29:18.561428 ERROR] [openstudio.standards.Model] Model has been assigned a weather file, but the file is not in the specified location of 'file:////mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/weather/SAU_Riyadh.404380_IWEC.epw'.
+[19:29:18.733535 ERROR] /var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb failed with message Runner error /var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb failed with Measure create_typical_building_from_model reported an error with ["[openstudio.standards.Model] Model has been assigned a weather file, but the file is not in the specified location of 'file:////mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/weather/SAU_Riyadh.404380_IWEC.epw'."], /var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:560:in `apply_measure'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:109:in `block in apply_measures'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:67:in `each_index'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:67:in `apply_measures'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/jobs/run_os_measures.rb:70:in `perform'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/run.rb:292:in `step'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/run.rb:234:in `run'
+:/openstudio_cli.rb:960:in `execute'
+:/openstudio_cli.rb:750:in `execute'
+:/openstudio_cli.rb:1744:in `<main>'
+eval:174:in `eval'
+eval:174:in `require_embedded_absolute'
+eval:160:in `block in require_embedded'
+eval:154:in `each'
+eval:154:in `require_embedded'
+eval:113:in `require'
+eval:3:in `<main>' in /var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:598:in `rescue in apply_measure'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:548:in `apply_measure'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:109:in `block in apply_measures'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:67:in `each_index'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:67:in `apply_measures'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/jobs/run_os_measures.rb:70:in `perform'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/run.rb:292:in `step'
+/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/run.rb:234:in `run'
+:/openstudio_cli.rb:960:in `execute'
+:/openstudio_cli.rb:750:in `execute'
+:/openstudio_cli.rb:1744:in `<main>'
+eval:174:in `eval'
+eval:174:in `require_embedded_absolute'
+eval:160:in `block in require_embedded'
+eval:154:in `each'
+eval:154:in `require_embedded'
+eval:113:in `require'
+eval:3:in `<main>'
+[19:29:18.735846 ERROR] Found error in state 'os_measures' with message ["/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb failed with message Runner error /var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb failed with Measure create_typical_building_from_model reported an error with [\"[openstudio.standards.Model] Model has been assigned a weather file, but the file is not in the specified location of 'file:////mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/weather/SAU_Riyadh.404380_IWEC.epw'.\"], /var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:560:in `apply_measure'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:109:in `block in apply_measures'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:67:in `each_index'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:67:in `apply_measures'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/jobs/run_os_measures.rb:70:in `perform'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/run.rb:292:in `step'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/run.rb:234:in `run'\n:/openstudio_cli.rb:960:in `execute'\n:/openstudio_cli.rb:750:in `execute'\n:/openstudio_cli.rb:1744:in `<main>'\neval:174:in `eval'\neval:174:in `require_embedded_absolute'\neval:160:in `block in require_embedded'\neval:154:in `each'\neval:154:in `require_embedded'\neval:113:in `require'\neval:3:in `<main>' in /var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:598:in `rescue in apply_measure'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:548:in `apply_measure'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:109:in `block in apply_measures'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:67:in `each_index'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:67:in `apply_measures'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/jobs/run_os_measures.rb:70:in `perform'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/run.rb:292:in `step'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/run.rb:234:in `run'\n:/openstudio_cli.rb:960:in `execute'\n:/openstudio_cli.rb:750:in `execute'\n:/openstudio_cli.rb:1744:in `<main>'\neval:174:in `eval'\neval:174:in `require_embedded_absolute'\neval:160:in `block in require_embedded'\neval:154:in `each'\neval:154:in `require_embedded'\neval:113:in `require'\neval:3:in `<main>':/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:647:in `rescue in apply_measure'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:305:in `apply_measure'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:109:in `block in apply_measures'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:67:in `each_index'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/util/measure.rb:67:in `apply_measures'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/jobs/run_os_measures.rb:70:in `perform'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/run.rb:292:in `step'\n/var/oscli/gems/ruby/2.5.0/gems/openstudio-workflow-2.0.0/lib/openstudio/workflow/run.rb:234:in `run'\n:/openstudio_cli.rb:960:in `execute'\n:/openstudio_cli.rb:750:in `execute'\n:/openstudio_cli.rb:1744:in `<main>'\neval:174:in `eval'\neval:174:in `require_embedded_absolute'\neval:160:in `block in require_embedded'\neval:154:in `each'\neval:154:in `require_embedded'\neval:113:in `require'\neval:3:in `<main>'"]}
+
+[19:29:19.015197 ERROR] Could not find results /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/data_point_9903d78e-cbe7-4805-a23a-d6f9ef0843ee/run/measure_attributes.json
+[19:29:19.015288 INFO] Saving files/reports back to the server
+[19:29:19.015580 INFO] Saving report /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/data_point_9903d78e-cbe7-4805-a23a-d6f9ef0843ee/out.osw to http://web:80/data_points/9903d78e-cbe7-4805-a23a-d6f9ef0843ee/upload_file
+[19:29:19.074874 INFO] Saving report responded with {"id":"5efb928fce5ea001352be9a7","data_point_id":"9903d78e-cbe7-4805-a23a-d6f9ef0843ee","display_name":"Final OSW File","type":"Report","created_at":"2020-06-30T19:29:19.056Z","updated_at":"2020-06-30T19:29:19.056Z"}
+[19:29:19.075282 INFO] Saving report /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/data_point_9903d78e-cbe7-4805-a23a-d6f9ef0843ee/run/data_point.zip to http://web:80/data_points/9903d78e-cbe7-4805-a23a-d6f9ef0843ee/upload_file
+[19:29:19.416511 INFO] Saving report responded with {"id":"5efb928fce5ea001352be9a8","data_point_id":"9903d78e-cbe7-4805-a23a-d6f9ef0843ee","display_name":"Zip File","type":"Data Point","created_at":"2020-06-30T19:29:19.206Z","updated_at":"2020-06-30T19:29:19.206Z"}
+[19:29:19.416842 INFO] Checking for presence of args file at /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/scripts/data_point/finalize.args
+[19:29:19.416913 INFO] Checking for presence of script file at /mnt/openstudio/analysis_72a216d4-3a64-4cd6-8e04-b9bc3af7ff20/scripts/data_point/finalize.sh
+[19:29:19.421995 INFO] Finished /opt/openstudio/server/app/jobs/dj_jobs/run_simulate_data_point.rb

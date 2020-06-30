@@ -1,0 +1,2056 @@
+{
+  "analysis": {
+    "display_name": "SG_IDFTesting_v0",
+    "name": "SG_IDFTesting_v0",
+    "output_variables": [],
+    "problem": {
+      "workflow": [
+        {
+          "name": "create_bar_from_building_type_ratios",
+          "display_name": "Create Bar From Building Type Ratios",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "CreateBarFromBuildingTypeRatios",
+          "measure_definition_directory": "./measures/create_bar_from_building_type_ratios",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\SG_IDFTesting_v0\\measures\\create_bar_from_building_type_ratios",
+          "measure_definition_display_name": "Create Bar From Building Type Ratios",
+          "measure_definition_name": "create_bar_from_building_type_ratios",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "6e3a14f8-c3c7-4e03-bc51-bef8a52e1a05",
+          "measure_definition_version_uuid": "2424b90a-9e47-41c2-a701-59473c167219",
+          "uuid": "6e3a14f8-c3c7-4e03-bc51-bef8a52e1a05",
+          "version_uuid": "2424b90a-9e47-41c2-a701-59473c167219",
+          "description": "Create a core and perimeter bar sliced by space type.",
+          "taxonomy": "Envelope.Form",
+          "arguments": [
+            {
+              "display_name": "Primary Building Type",
+              "display_name_short": "bldg_type_a",
+              "name": "bldg_type_a",
+              "value_type": "string",
+              "default_value": "SmallOffice",
+              "value": "MediumOffice"
+            },
+            {
+              "display_name": "Primary Building Type Number of Units",
+              "display_name_short": "bldg_type_a_num_units",
+              "name": "bldg_type_a_num_units",
+              "value_type": "integer",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Building Type B",
+              "display_name_short": "bldg_type_b",
+              "name": "bldg_type_b",
+              "value_type": "string",
+              "default_value": "SmallOffice",
+              "value": "SmallOffice"
+            },
+            {
+              "display_name": "Building Type B Fraction of Building Floor Area",
+              "display_name_short": "bldg_type_b_fract_bldg_area",
+              "name": "bldg_type_b_fract_bldg_area",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Building Type B Number of Units",
+              "display_name_short": "bldg_type_b_num_units",
+              "name": "bldg_type_b_num_units",
+              "value_type": "integer",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Building Type C",
+              "display_name_short": "bldg_type_c",
+              "name": "bldg_type_c",
+              "value_type": "string",
+              "default_value": "SmallOffice",
+              "value": "SmallOffice"
+            },
+            {
+              "display_name": "Building Type C Fraction of Building Floor Area",
+              "display_name_short": "bldg_type_c_fract_bldg_area",
+              "name": "bldg_type_c_fract_bldg_area",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Building Type C Number of Units",
+              "display_name_short": "bldg_type_c_num_units",
+              "name": "bldg_type_c_num_units",
+              "value_type": "integer",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Building Type D",
+              "display_name_short": "bldg_type_d",
+              "name": "bldg_type_d",
+              "value_type": "string",
+              "default_value": "SmallOffice",
+              "value": "SmallOffice"
+            },
+            {
+              "display_name": "Building Type D Fraction of Building Floor Area",
+              "display_name_short": "bldg_type_d_fract_bldg_area",
+              "name": "bldg_type_d_fract_bldg_area",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Building Type D Number of Units",
+              "display_name_short": "bldg_type_d_num_units",
+              "name": "bldg_type_d_num_units",
+              "value_type": "integer",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Single Floor Area",
+              "display_name_short": "single_floor_area",
+              "name": "single_floor_area",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Total Building Floor Area",
+              "display_name_short": "total_bldg_floor_area",
+              "name": "total_bldg_floor_area",
+              "value_type": "double",
+              "default_value": 10000,
+              "value": 53633
+            },
+            {
+              "display_name": "Typical Floor to FLoor Height",
+              "display_name_short": "floor_height",
+              "name": "floor_height",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Number of Stories Above Grade",
+              "display_name_short": "num_stories_above_grade",
+              "name": "num_stories_above_grade",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 3
+            },
+            {
+              "display_name": "Number of Stories Below Grade",
+              "display_name_short": "num_stories_below_grade",
+              "name": "num_stories_below_grade",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Building Rotation",
+              "display_name_short": "building_rotation",
+              "name": "building_rotation",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Target Standard",
+              "display_name_short": "template",
+              "name": "template",
+              "value_type": "string",
+              "default_value": "90.1-2004",
+              "value": "90.1-2013"
+            },
+            {
+              "display_name": "Ratio of North/South Facade Length Relative to East/West Facade Length.",
+              "display_name_short": "ns_to_ew_ratio",
+              "name": "ns_to_ew_ratio",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Fraction of Exterior Wall Area with Adjacent Structure",
+              "display_name_short": "party_wall_fraction",
+              "name": "party_wall_fraction",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Number of North facing stories with party wall",
+              "display_name_short": "party_wall_stories_north",
+              "name": "party_wall_stories_north",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Number of South facing stories with party wall",
+              "display_name_short": "party_wall_stories_south",
+              "name": "party_wall_stories_south",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Number of East facing stories with party wall",
+              "display_name_short": "party_wall_stories_east",
+              "name": "party_wall_stories_east",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Number of West facing stories with party wall",
+              "display_name_short": "party_wall_stories_west",
+              "name": "party_wall_stories_west",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Is the Bottom Story Exposed to Ground?",
+              "display_name_short": "bottom_story_ground_exposed_floor",
+              "name": "bottom_story_ground_exposed_floor",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Is the Top Story an Exterior Roof?",
+              "display_name_short": "top_story_exterior_exposed_roof",
+              "name": "top_story_exterior_exposed_roof",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Calculation Method for Story Multiplier",
+              "display_name_short": "story_multiplier",
+              "name": "story_multiplier",
+              "value_type": "string",
+              "default_value": "Basements Ground Mid Top",
+              "value": "Basements Ground Mid Top"
+            },
+            {
+              "display_name": "Division Method for Bar Space Types.",
+              "display_name_short": "bar_division_method",
+              "name": "bar_division_method",
+              "value_type": "string",
+              "default_value": "Multiple Space Types - Individual Stories Sliced",
+              "value": "Single Space Type - Core and Perimeter"
+            },
+            {
+              "display_name": "Make Mid Story Floor Surfaces Adibatic",
+              "display_name_short": "make_mid_story_surfaces_adiabatic",
+              "name": "make_mid_story_surfaces_adiabatic",
+              "value_type": "boolean",
+              "default_value": false,
+              "value": false
+            },
+            {
+              "display_name": "Use Upstream Argument Values",
+              "display_name_short": "use_upstream_args",
+              "name": "use_upstream_args",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": false
+            }
+          ],
+          "variables": [
+            {
+              "argument": {
+                "display_name": "Window to Wall Ratio.",
+                "display_name_short": "wwr",
+                "name": "wwr",
+                "value_type": "double",
+                "default_value": 0,
+                "value": 0.4
+              },
+              "display_name": "Window to Wall Ratio.",
+              "display_name_short": "Window to Wall Ratio.",
+              "variable_type": "variable",
+              "units": "",
+              "minimum": 0.4,
+              "maximum": 0.95,
+              "relation_to_output": null,
+              "static_value": 0.4,
+              "uuid": "",
+              "version_uuid": "",
+              "variable": true,
+              "uncertainty_description": {
+                "type": "discrete",
+                "attributes": [
+                  {
+                    "name": "discrete",
+                    "values_and_weights": [
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 0.4,
+                        "weight": 0.0625
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lower_bounds",
+                    "value": 0.4
+                  },
+                  {
+                    "name": "upper_bounds",
+                    "value": 0.95
+                  },
+                  {
+                    "name": "modes",
+                    "value": 0.4
+                  },
+                  {
+                    "name": "delta_x",
+                    "value": null
+                  },
+                  {
+                    "name": "stddev",
+                    "value": null
+                  }
+                ]
+              },
+              "workflow_index": 0
+            }
+          ],
+          "workflow_index": 0
+        },
+        {
+          "name": "change_building_location",
+          "display_name": "ChangeBuildingLocation",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "ChangeBuildingLocation",
+          "measure_definition_directory": "./measures/ChangeBuildingLocation",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\SG_IDFTesting_v0\\measures\\ChangeBuildingLocation",
+          "measure_definition_display_name": "ChangeBuildingLocation",
+          "measure_definition_name": "change_building_location",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "d4db4971-f5ba-11e3-a3ac-0800200c9a66",
+          "measure_definition_version_uuid": "a8ac51ba-48b0-44dc-ae78-b7fc5a659ea1",
+          "uuid": "d4db4971-f5ba-11e3-a3ac-0800200c9a66",
+          "version_uuid": "a8ac51ba-48b0-44dc-ae78-b7fc5a659ea1",
+          "description": "Change the building location",
+          "taxonomy": "Whole Building.Space Types",
+          "arguments": [
+            {
+              "display_name": "Climate Zone.",
+              "display_name_short": "climate_zone",
+              "name": "climate_zone",
+              "value_type": "string",
+              "default_value": "Lookup From Stat File",
+              "value": "Lookup From Stat File"
+            },
+            {
+              "display_name": "Set Calendar Year",
+              "display_name_short": "set_year",
+              "name": "set_year",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Use Upstream Argument Values",
+              "display_name_short": "use_upstream_args",
+              "name": "use_upstream_args",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            }
+          ],
+          "variables": [
+            {
+              "argument": {
+                "display_name": "Weather File Name",
+                "display_name_short": "weather_file_name",
+                "name": "weather_file_name",
+                "value_type": "string",
+                "default_value": "SAU_Riyadh.404380_IWEC.epw",
+                "value": "SAU_Riyadh.404380_IWEC.epw"
+              },
+              "display_name": "Weather File Name",
+              "display_name_short": "Weather File Name",
+              "variable_type": "variable",
+              "units": "",
+              "minimum": "SAU_Riyadh.404380_IWEC.epw",
+              "maximum": "USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.epw",
+              "relation_to_output": null,
+              "static_value": "SAU_Riyadh.404380_IWEC.epw",
+              "uuid": "",
+              "version_uuid": "",
+              "variable": true,
+              "uncertainty_description": {
+                "type": "discrete",
+                "attributes": [
+                  {
+                    "name": "discrete",
+                    "values_and_weights": [
+                      {
+                        "value": "USA_AK_Fairbanks.Intl.AP.702610_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_AK_Fairbanks.Intl.AP.702610_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_AK_Fairbanks.Intl.AP.702610_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_AK_Fairbanks.Intl.AP.702610_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "SAU_Riyadh.404380_IWEC.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "SAU_Riyadh.404380_IWEC.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "SAU_Riyadh.404380_IWEC.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "SAU_Riyadh.404380_IWEC.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_GA_Atlanta-Hartsfield-Jackson.Intl.AP.722190_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_GA_Atlanta-Hartsfield-Jackson.Intl.AP.722190_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_GA_Atlanta-Hartsfield-Jackson.Intl.AP.722190_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_GA_Atlanta-Hartsfield-Jackson.Intl.AP.722190_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.epw",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.epw",
+                        "weight": 0.0625
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lower_bounds",
+                    "value": "SAU_Riyadh.404380_IWEC.epw"
+                  },
+                  {
+                    "name": "upper_bounds",
+                    "value": "USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.epw"
+                  },
+                  {
+                    "name": "modes",
+                    "value": null
+                  },
+                  {
+                    "name": "delta_x",
+                    "value": null
+                  },
+                  {
+                    "name": "stddev",
+                    "value": null
+                  }
+                ]
+              },
+              "workflow_index": 0
+            }
+          ],
+          "workflow_index": 1
+        },
+        {
+          "name": "create_typical_building_from_model",
+          "display_name": "Create Typical Building from Model",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "CreateTypicalBuildingFromModel",
+          "measure_definition_directory": "./measures/create_typical_building_from_model",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\SG_IDFTesting_v0\\measures\\create_typical_building_from_model",
+          "measure_definition_display_name": "Create Typical Building from Model",
+          "measure_definition_name": "create_typical_building_from_model",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "339a2e3a-273c-4494-bb50-bfe586a0647c",
+          "measure_definition_version_uuid": "087d38a1-90d2-428a-9eb1-2587ed205185",
+          "uuid": "339a2e3a-273c-4494-bb50-bfe586a0647c",
+          "version_uuid": "087d38a1-90d2-428a-9eb1-2587ed205185",
+          "description": "Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems.",
+          "taxonomy": "Whole Building.Space Types",
+          "arguments": [
+            {
+              "display_name": "Target Standard",
+              "display_name_short": "template",
+              "name": "template",
+              "value_type": "string",
+              "default_value": "90.1-2010",
+              "value": "90.1-2013"
+            },
+            {
+              "display_name": "HVAC System Type",
+              "display_name_short": "system_type",
+              "name": "system_type",
+              "value_type": "string",
+              "default_value": "Inferred",
+              "value": "Inferred"
+            },
+            {
+              "display_name": "HVAC System Delivery Type",
+              "display_name_short": "hvac_delivery_type",
+              "name": "hvac_delivery_type",
+              "value_type": "string",
+              "default_value": "Forced Air",
+              "value": "Forced Air"
+            },
+            {
+              "display_name": "HVAC Heating Source",
+              "display_name_short": "htg_src",
+              "name": "htg_src",
+              "value_type": "string",
+              "default_value": "NaturalGas",
+              "value": "NaturalGas"
+            },
+            {
+              "display_name": "HVAC Cooling Source",
+              "display_name_short": "clg_src",
+              "name": "clg_src",
+              "value_type": "string",
+              "default_value": "Electricity",
+              "value": "Electricity"
+            },
+            {
+              "display_name": "Kitchen Exhaust MakeUp Air Calculation Method",
+              "display_name_short": "kitchen_makeup",
+              "name": "kitchen_makeup",
+              "value_type": "string",
+              "default_value": "Adjacent",
+              "value": "None"
+            },
+            {
+              "display_name": "Exterior Lighting Zone",
+              "display_name_short": "exterior_lighting_zone",
+              "name": "exterior_lighting_zone",
+              "value_type": "string",
+              "default_value": "3 - All Other Areas",
+              "value": "0 - Undeveloped Areas Parks"
+            },
+            {
+              "display_name": "Add Constructions to Model",
+              "display_name_short": "add_constructions",
+              "name": "add_constructions",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add Space Type Loads to Model",
+              "display_name_short": "add_space_type_loads",
+              "name": "add_space_type_loads",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add Elevators to Model",
+              "display_name_short": "add_elevators",
+              "name": "add_elevators",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add Exterior Lights to Model",
+              "display_name_short": "add_exterior_lights",
+              "name": "add_exterior_lights",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": false
+            },
+            {
+              "display_name": "Onsite Parking Fraction",
+              "display_name_short": "onsite_parking_fraction",
+              "name": "onsite_parking_fraction",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 0
+            },
+            {
+              "display_name": "Add Exhaust Fans to Model",
+              "display_name_short": "add_exhaust",
+              "name": "add_exhaust",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": false
+            },
+            {
+              "display_name": "Add Service Water Heating to Model",
+              "display_name_short": "add_swh",
+              "name": "add_swh",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add Thermostats",
+              "display_name_short": "add_thermostat",
+              "name": "add_thermostat",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add HVAC System to Model",
+              "display_name_short": "add_hvac",
+              "name": "add_hvac",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Clean Model of non-gemoetry objects",
+              "display_name_short": "remove_objects",
+              "name": "remove_objects",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Use Upstream Argument Values",
+              "display_name_short": "use_upstream_args",
+              "name": "use_upstream_args",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": false
+            },
+            {
+              "display_name": "Enable Daylight Savings.",
+              "display_name_short": "enable_dst",
+              "name": "enable_dst",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            }
+          ],
+          "variables": [],
+          "workflow_index": 2
+        },
+        {
+          "name": "add_redirecting_bipv",
+          "display_name": "Add Redirecting BIPV1",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "AddRedirectingBipv",
+          "measure_definition_directory": "./measures/add_redirecting_bipv",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\SG_IDFTesting_v0\\measures\\add_redirecting_bipv",
+          "measure_definition_display_name": "Add Redirecting BIPV1",
+          "measure_definition_name": "add_redirecting_bipv",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "155ee368-ae2f-4a82-af75-c2c89861cd62",
+          "measure_definition_version_uuid": "07680941-e817-4db9-b9a5-e3ca53be605d",
+          "uuid": "155ee368-ae2f-4a82-af75-c2c89861cd62",
+          "version_uuid": "07680941-e817-4db9-b9a5-e3ca53be605d",
+          "description": "Add 'UbiQD' PV technology to windows",
+          "taxonomy": "Onsite Power Generation.Photovoltaic",
+          "arguments": [
+            {
+              "display_name": "QD Surface Coverage",
+              "display_name_short": "dot_coverage",
+              "name": "dot_coverage",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "PV Efficiency",
+              "display_name_short": "pv_eff",
+              "name": "pv_eff",
+              "value_type": "double",
+              "default_value": 0.05,
+              "value": 0.05
+            },
+            {
+              "display_name": "Inverter Efficiency",
+              "display_name_short": "inverter_eff",
+              "name": "inverter_eff",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "SHGC Multiplier",
+              "display_name_short": "shgc_mult",
+              "name": "shgc_mult",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "facade",
+              "display_name_short": "facade",
+              "name": "facade",
+              "value_type": "string",
+              "default_value": "ESW",
+              "value": "S"
+            },
+            {
+              "display_name": "Debug Mode",
+              "display_name_short": "debug_mode",
+              "name": "debug_mode",
+              "value_type": "boolean",
+              "default_value": false,
+              "value": false
+            }
+          ],
+          "variables": [],
+          "workflow_index": 3
+        },
+        {
+          "name": "add_output_variable",
+          "display_name": "Add Output Variable",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "AddOutputVariable",
+          "measure_definition_directory": "./measures/AddOutputVariable",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\SG_IDFTesting_v0\\measures\\AddOutputVariable",
+          "measure_definition_display_name": "Add Output Variable",
+          "measure_definition_name": "add_output_variable",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "2a058afb-e349-49ae-a4bf-2c56a42b4352",
+          "measure_definition_version_uuid": "4a3ec2bc-75b6-4224-948f-ef727c4a31a3",
+          "uuid": "2a058afb-e349-49ae-a4bf-2c56a42b4352",
+          "version_uuid": "4a3ec2bc-75b6-4224-948f-ef727c4a31a3",
+          "description": "This measure adds an output variable at the requested reporting frequency.",
+          "taxonomy": "Reporting.QAQC",
+          "arguments": [
+            {
+              "display_name": "Enter Variable Name",
+              "display_name_short": "variable_name",
+              "name": "variable_name",
+              "value_type": "string",
+              "default_value": "Surface Window Thermochromic Layer Property Specification Temperature",
+              "value": "Surface Window Thermochromic Layer Property Specification Temperature"
+            },
+            {
+              "display_name": "Reporting Frequency",
+              "display_name_short": "reporting_frequency",
+              "name": "reporting_frequency",
+              "value_type": "string",
+              "default_value": "hourly",
+              "value": "timestep"
+            },
+            {
+              "display_name": "Enter Key Name",
+              "display_name_short": "key_value",
+              "name": "key_value",
+              "value_type": "string",
+              "default_value": "*",
+              "value": "*"
+            }
+          ],
+          "variables": [],
+          "workflow_index": 4
+        },
+        {
+          "name": "inject_idf_window_objects",
+          "display_name": " Inject IDF Window Objects",
+          "measure_type": "EnergyPlusMeasure",
+          "measure_definition_class_name": "InjectIDFWindowObjects",
+          "measure_definition_directory": "./measures/inject_idf_window_objects",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\SG_IDFTesting_v0\\measures\\inject_idf_window_objects",
+          "measure_definition_display_name": " Inject IDF Window Objects",
+          "measure_definition_name": "inject_idf_window_objects",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "dab2fd51-4fbb-44fa-9e6d-aac75561c934",
+          "measure_definition_version_uuid": "fa23c3f1-77dc-4f80-b85d-aaf17b241ce5",
+          "uuid": "dab2fd51-4fbb-44fa-9e6d-aac75561c934",
+          "version_uuid": "fa23c3f1-77dc-4f80-b85d-aaf17b241ce5",
+          "description": "This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus.",
+          "taxonomy": "Whole Building.Space Types",
+          "arguments": [
+            {
+              "display_name": "Choice of window",
+              "display_name_short": "choice",
+              "name": "choice",
+              "value_type": "string",
+              "default_value": "All fenestration surfaces",
+              "value": "All fenestration surfaces"
+            }
+          ],
+          "variables": [
+            {
+              "argument": {
+                "display_name": "Choice of IGU",
+                "display_name_short": "glztype",
+                "name": "glztype",
+                "value_type": "string",
+                "default_value": "Baseline_ASHRAE",
+                "value": "VeryHot_ASHRAE",
+                "choice_display_names": [
+                  "Baseline_ASHRAE",
+                  "Baseline_GlzSys6",
+                  "Baseline_GlzSys13",
+                  "Baseline_GlzSys15",
+                  "Baseline_GlzSys6_13",
+                  "Baseline_GlzSys15_withPV",
+                  "GlzSys_6_withoutPV",
+                  "GlzSys_13_withoutPV",
+                  "GlzSys_6_withPV",
+                  "GlzSys_13_withPV",
+                  "GlzSys_Dark",
+                  "GlzSys_Light",
+                  "GlzSys_Thermochromic_40C",
+                  "GlzSys_Thermochromic_35C",
+                  "GlzSys_Thermochromic_30C",
+                  "FrameTest_woFrame",
+                  "FrameTest_wFrame",
+                  "VeryHot_ASHRAE",
+                  "VeryHot_SwitchGlaze",
+                  "VeryHot_Dark",
+                  "VeryHot_Light",
+                  "Hot_ASHRAE",
+                  "Hot_SwitchGlaze",
+                  "Hot_Dark",
+                  "Hot_Light",
+                  "Cold_ASHRAE",
+                  "Cold_SwitchGlaze",
+                  "Cold_Dark",
+                  "Cold_Light",
+                  "VeryCold_ASHRAE",
+                  "VeryCold_SwitchGlaze",
+                  "VeryCold_Dark",
+                  "VeryCold_Light"
+                ]
+              },
+              "display_name": "Choice of IGU",
+              "display_name_short": "Choice of IGU",
+              "variable_type": "variable",
+              "units": "",
+              "minimum": "Cold_ASHRAE",
+              "maximum": "VeryHot_SwitchGlaze",
+              "relation_to_output": null,
+              "static_value": "VeryHot_ASHRAE",
+              "uuid": "",
+              "version_uuid": "",
+              "variable": true,
+              "uncertainty_description": {
+                "type": "discrete",
+                "attributes": [
+                  {
+                    "name": "discrete",
+                    "values_and_weights": [
+                      {
+                        "value": "VeryCold_ASHRAE",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "VeryCold_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "VeryCold_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "VeryCold_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "VeryHot_ASHRAE",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "VeryHot_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "VeryHot_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "VeryHot_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "Hot_ASHRAE",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "Hot_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "Hot_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "Hot_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "Cold_ASHRAE",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "Cold_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "Cold_SwitchGlaze",
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": "Cold_SwitchGlaze",
+                        "weight": 0.0625
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lower_bounds",
+                    "value": "Cold_ASHRAE"
+                  },
+                  {
+                    "name": "upper_bounds",
+                    "value": "VeryHot_SwitchGlaze"
+                  },
+                  {
+                    "name": "modes",
+                    "value": null
+                  },
+                  {
+                    "name": "delta_x",
+                    "value": null
+                  },
+                  {
+                    "name": "stddev",
+                    "value": null
+                  }
+                ]
+              },
+              "workflow_index": 0
+            },
+            {
+              "argument": {
+                "display_name": "Thermochromic window?",
+                "display_name_short": "thermochromic",
+                "name": "thermochromic",
+                "value_type": "boolean",
+                "default_value": false,
+                "value": false
+              },
+              "display_name": "Thermochromic window?",
+              "display_name_short": "Thermochromic window?",
+              "variable_type": "variable",
+              "units": "",
+              "minimum": false,
+              "maximum": true,
+              "relation_to_output": null,
+              "static_value": false,
+              "uuid": "",
+              "version_uuid": "",
+              "variable": true,
+              "uncertainty_description": {
+                "type": "discrete",
+                "attributes": [
+                  {
+                    "name": "discrete",
+                    "values_and_weights": [
+                      {
+                        "value": false,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": false,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": false,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": false,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": true,
+                        "weight": 0.0625
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lower_bounds",
+                    "value": false
+                  },
+                  {
+                    "name": "upper_bounds",
+                    "value": true
+                  },
+                  {
+                    "name": "modes",
+                    "value": 1
+                  },
+                  {
+                    "name": "delta_x",
+                    "value": null
+                  },
+                  {
+                    "name": "stddev",
+                    "value": null
+                  }
+                ]
+              },
+              "workflow_index": 1
+            },
+            {
+              "argument": {
+                "display_name": "Thermochromic window switching temperature based on outermost window surface temperature",
+                "display_name_short": "t_switching",
+                "name": "t_switching",
+                "value_type": "double",
+                "default_value": 35,
+                "value": 35
+              },
+              "display_name": "Thermochromic window switching temperature based on outermost window surface temperature",
+              "display_name_short": "Thermochromic window switching temperature based on outermost window surface temperature",
+              "variable_type": "variable",
+              "units": "",
+              "minimum": 10,
+              "maximum": 50,
+              "relation_to_output": null,
+              "static_value": 35,
+              "uuid": "",
+              "version_uuid": "",
+              "variable": true,
+              "uncertainty_description": {
+                "type": "discrete",
+                "attributes": [
+                  {
+                    "name": "discrete",
+                    "values_and_weights": [
+                      {
+                        "value": 35,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 10,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 30,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 50,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 35,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 10,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 30,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 50,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 35,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 10,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 30,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 50,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 35,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 10,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 30,
+                        "weight": 0.0625
+                      },
+                      {
+                        "value": 50,
+                        "weight": 0.0625
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lower_bounds",
+                    "value": 10
+                  },
+                  {
+                    "name": "upper_bounds",
+                    "value": 50
+                  },
+                  {
+                    "name": "modes",
+                    "value": 35
+                  },
+                  {
+                    "name": "delta_x",
+                    "value": null
+                  },
+                  {
+                    "name": "stddev",
+                    "value": null
+                  }
+                ]
+              },
+              "workflow_index": 2
+            }
+          ],
+          "workflow_index": 5
+        },
+        {
+          "name": "export_variableto_csv",
+          "display_name": "ExportVariabletoCSV",
+          "measure_type": "ReportingMeasure",
+          "measure_definition_class_name": "ExportVariabletoCSV",
+          "measure_definition_directory": "./measures/ExportVariabletoCSV",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\SG_IDFTesting_v0\\measures\\ExportVariabletoCSV",
+          "measure_definition_display_name": "ExportVariabletoCSV",
+          "measure_definition_name": "export_variableto_csv",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "6fdecd71-cee1-40b2-9b38-b92f4073f023",
+          "measure_definition_version_uuid": "443410fd-c206-4363-9362-a145a79ccb49",
+          "uuid": "6fdecd71-cee1-40b2-9b38-b92f4073f023",
+          "version_uuid": "443410fd-c206-4363-9362-a145a79ccb49",
+          "description": "Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file.",
+          "taxonomy": "Reporting.QAQC",
+          "arguments": [
+            {
+              "display_name": "Enter Variable Name.",
+              "display_name_short": "variable_name",
+              "name": "variable_name",
+              "value_type": "string",
+              "default_value": "Surface Window Thermochromic Layer Property Specification Temperature",
+              "value": "Surface Window Thermochromic Layer Property Specification Temperature"
+            },
+            {
+              "display_name": "Reporting Frequency.",
+              "display_name_short": "reporting_frequency",
+              "name": "reporting_frequency",
+              "value_type": "string",
+              "default_value": "Hourly",
+              "value": "Zone Timestep"
+            }
+          ],
+          "variables": [],
+          "workflow_index": 6
+        }
+      ],
+      "algorithm": {
+        "objective_functions": []
+      },
+      "analysis_type": null,
+      "design_alternatives": [
+        {
+          "name": "VERYCOLD_ASHRAE",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "VeryCold",
+              "description": "Option 4 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "VeryCold_ASHRAE",
+              "description": "Option 4 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "VERYCOLD_SG_10",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "VeryCold",
+              "description": "Option 4 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "VeryCold_SwitchGlaze_low",
+              "description": "Option 14 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "VERYCOLD_SG_30",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "VeryCold",
+              "description": "Option 4 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "VeryCold_SwitchGlaze_med",
+              "description": "Option 15 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "VERYCOLD_SG_50",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "VeryCold",
+              "description": "Option 4 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "VeryCold_SwitchGlaze_high",
+              "description": "Option 16 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "VERYHOT_ASHRAE",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "VeryHot",
+              "description": "Option 1 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "VeryHot_ASHRAE",
+              "description": "Option 1 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "VERYHOT_SG_10",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "VeryHot",
+              "description": "Option 1 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "VeryHot_SwitchGlaze_low",
+              "description": "Option 5 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "VERYHOT_SG_30",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "VeryHot",
+              "description": "Option 1 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "VeryHot_SwitchGlaze_med",
+              "description": "Option 6 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "VERYHOT_SG_50",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "VeryHot",
+              "description": "Option 1 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "VeryHot_SwitchGlaze_high",
+              "description": "Option 7 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "HOT_ASHRAE",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "Hot",
+              "description": "Option 2 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "Hot_ASHRAE",
+              "description": "Option 2 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "HOT_SG_10",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "Hot",
+              "description": "Option 2 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "Hot_SwitchGlaze_low",
+              "description": "Option 8 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "HOT_SG_30",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "Hot",
+              "description": "Option 2 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "Hot_SwitchGlaze_med",
+              "description": "Option 9 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "HOT_SG_50",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "Hot",
+              "description": "Option 2 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "Hot_SwitchGlaze_high",
+              "description": "Option 10 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "COLD_ASHRAE",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "Cold",
+              "description": "Option 3 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "Cold_ASHRAE",
+              "description": "Option 3 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "COLD_SG_10",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "Cold",
+              "description": "Option 3 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "Cold_SwitchGlaze_low",
+              "description": "Option 11 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "COLD_SG_30",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "Cold",
+              "description": "Option 3 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "Cold_SwitchGlaze_med",
+              "description": "Option 12 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        },
+        {
+          "name": "COLD_SG_50",
+          "options": [
+            {
+              "measure_name": "create_bar_from_building_type_ratios",
+              "workflow_index": 0,
+              "name": "MediumOffice_lowwwr",
+              "description": "Option 1 Description: Create a core and perimeter bar sliced by space type."
+            },
+            {
+              "measure_name": "change_building_location",
+              "workflow_index": 1,
+              "name": "Cold",
+              "description": "Option 3 Description: Change the building location"
+            },
+            {
+              "measure_name": "create_typical_building_from_model",
+              "workflow_index": 2,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating. The end result is somewhat like a custom protptye model with user geometry, but it may use different HVAC systems."
+            },
+            {
+              "measure_name": "add_redirecting_bipv",
+              "workflow_index": 3,
+              "name": "S",
+              "description": "Option 1 Description: Add 'UbiQD' PV technology to windows"
+            },
+            {
+              "measure_name": "add_output_variable",
+              "workflow_index": 4,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: This measure adds an output variable at the requested reporting frequency."
+            },
+            {
+              "measure_name": "inject_idf_window_objects",
+              "workflow_index": 5,
+              "name": "Cold_SwitchGlaze_high",
+              "description": "Option 13 Description: This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus."
+            },
+            {
+              "measure_name": "export_variableto_csv",
+              "workflow_index": 6,
+              "name": "Option 1 Name",
+              "description": "Option 1 Description: Exports an OutputVariable specified in the AddOutputVariable OpenStudio measure to a csv file."
+            }
+          ]
+        }
+      ]
+    },
+    "seed": {
+      "file_type": "OSM",
+      "path": "./seeds/switchglaze.osm"
+    },
+    "weather_file": {
+      "file_type": "EPW",
+      "path": "./weather/DEU_Hamburg.101470_IWEC.epw"
+    },
+    "file_format_version": 1,
+    "server_scripts": {}
+  }
+}
