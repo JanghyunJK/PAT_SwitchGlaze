@@ -1,0 +1,93 @@
+2021-07-28T09:12:15.019-0600 I CONTROL  [initandlisten] MongoDB starting : pid=4708 port=27017 dbpath=C:/Users/JKIM4/Documents/GitHub/PAT_SwitchGlaze/SG_v11_PropertyCalculating/data/db 64-bit host=JKIM4-33723S
+2021-07-28T09:12:15.020-0600 I CONTROL  [initandlisten] targetMinOS: Windows Vista/Windows Server 2008
+2021-07-28T09:12:15.021-0600 I CONTROL  [initandlisten] db version v3.2.5
+2021-07-28T09:12:15.021-0600 I CONTROL  [initandlisten] git version: 34e65e5383f7ea1726332cb175b73077ec4a1b02
+2021-07-28T09:12:15.021-0600 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-07-28T09:12:15.022-0600 I CONTROL  [initandlisten] modules: none
+2021-07-28T09:12:15.022-0600 I CONTROL  [initandlisten] build environment:
+2021-07-28T09:12:15.022-0600 I CONTROL  [initandlisten]     distarch: x86_64
+2021-07-28T09:12:15.023-0600 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-07-28T09:12:15.023-0600 I CONTROL  [initandlisten] options: { net: { port: 27017 }, storage: { dbPath: "C:/Users/JKIM4/Documents/GitHub/PAT_SwitchGlaze/SG_v11_PropertyCalculating/data/db" }, systemLog: { destination: "file", path: "C:/Users/JKIM4/Documents/GitHub/PAT_SwitchGlaze/SG_v11_PropertyCalculating/logs/mongo.log" } }
+2021-07-28T09:12:15.024-0600 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=8G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2021-07-28T09:12:15.074-0600 I CONTROL  [initandlisten] 
+2021-07-28T09:12:15.075-0600 I CONTROL  [initandlisten] ** WARNING: Insecure configuration, access control is not enabled and no --bind_ip has been specified.
+2021-07-28T09:12:15.075-0600 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted, 
+2021-07-28T09:12:15.075-0600 I CONTROL  [initandlisten] **          and the server listens on all available network interfaces.
+2021-07-28T09:12:15.075-0600 I CONTROL  [initandlisten] 
+2021-07-28T09:12:15.078-0600 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2021-07-28T09:12:15.078-0600 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/JKIM4/Documents/GitHub/PAT_SwitchGlaze/SG_v11_PropertyCalculating/data/db/diagnostic.data'
+2021-07-28T09:12:15.087-0600 I NETWORK  [initandlisten] waiting for connections on port 27017
+2021-07-28T09:12:15.487-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:54135 #1 (1 connection now open)
+2021-07-28T09:12:15.489-0600 I NETWORK  [conn1] end connection 127.0.0.1:54135 (0 connections now open)
+2021-07-28T09:12:36.445-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50521 #2 (1 connection now open)
+2021-07-28T09:12:36.470-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50522 #3 (2 connections now open)
+2021-07-28T09:12:56.155-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:63179 #4 (3 connections now open)
+2021-07-28T09:12:56.186-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:63180 #5 (4 connections now open)
+2021-07-28T09:12:56.455-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:63181 #6 (5 connections now open)
+2021-07-28T09:12:56.482-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:63182 #7 (6 connections now open)
+2021-07-28T09:12:57.038-0600 I NETWORK  [conn4] end connection 127.0.0.1:63179 (5 connections now open)
+2021-07-28T09:12:57.039-0600 I NETWORK  [conn5] end connection 127.0.0.1:63180 (5 connections now open)
+2021-07-28T09:12:57.347-0600 I NETWORK  [conn6] end connection 127.0.0.1:63181 (3 connections now open)
+2021-07-28T09:12:57.347-0600 I NETWORK  [conn7] end connection 127.0.0.1:63182 (3 connections now open)
+2021-07-28T09:13:03.554-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59180 #8 (3 connections now open)
+2021-07-28T09:13:03.571-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59181 #9 (4 connections now open)
+2021-07-28T09:13:03.809-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59182 #10 (5 connections now open)
+2021-07-28T09:13:03.825-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59183 #11 (6 connections now open)
+2021-07-28T09:13:14.581-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59185 #12 (7 connections now open)
+2021-07-28T09:13:14.601-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59186 #13 (8 connections now open)
+2021-07-28T09:13:15.391-0600 I NETWORK  [conn12] end connection 127.0.0.1:59185 (7 connections now open)
+2021-07-28T09:13:15.392-0600 I NETWORK  [conn13] end connection 127.0.0.1:59186 (6 connections now open)
+2021-07-28T09:13:21.884-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59188 #14 (7 connections now open)
+2021-07-28T09:13:21.901-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59189 #15 (8 connections now open)
+2021-07-28T09:13:35.630-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51709 #16 (9 connections now open)
+2021-07-28T09:13:35.658-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51710 #17 (10 connections now open)
+2021-07-28T09:13:36.429-0600 I NETWORK  [conn17] end connection 127.0.0.1:51710 (9 connections now open)
+2021-07-28T09:13:36.429-0600 I NETWORK  [conn16] end connection 127.0.0.1:51709 (9 connections now open)
+2021-07-28T09:13:42.884-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51711 #18 (9 connections now open)
+2021-07-28T09:13:42.901-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:51712 #19 (10 connections now open)
+2021-07-28T09:13:55.703-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52669 #20 (11 connections now open)
+2021-07-28T09:13:55.719-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52670 #21 (12 connections now open)
+2021-07-28T09:13:56.597-0600 I NETWORK  [conn21] end connection 127.0.0.1:52670 (11 connections now open)
+2021-07-28T09:13:56.597-0600 I NETWORK  [conn20] end connection 127.0.0.1:52669 (11 connections now open)
+2021-07-28T09:14:03.105-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52671 #22 (11 connections now open)
+2021-07-28T09:14:03.122-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52672 #23 (12 connections now open)
+2021-07-28T09:14:18.275-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52676 #24 (13 connections now open)
+2021-07-28T09:14:18.300-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52677 #25 (14 connections now open)
+2021-07-28T09:14:19.090-0600 I NETWORK  [conn25] end connection 127.0.0.1:52677 (13 connections now open)
+2021-07-28T09:14:19.091-0600 I NETWORK  [conn24] end connection 127.0.0.1:52676 (13 connections now open)
+2021-07-28T09:14:25.570-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52678 #26 (13 connections now open)
+2021-07-28T09:14:25.587-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52679 #27 (14 connections now open)
+2021-07-28T09:14:36.219-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52683 #28 (15 connections now open)
+2021-07-28T09:14:36.243-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52684 #29 (16 connections now open)
+2021-07-28T09:14:37.088-0600 I NETWORK  [conn28] end connection 127.0.0.1:52683 (15 connections now open)
+2021-07-28T09:14:37.088-0600 I NETWORK  [conn29] end connection 127.0.0.1:52684 (15 connections now open)
+2021-07-28T09:14:43.586-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52685 #30 (15 connections now open)
+2021-07-28T09:14:43.602-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52686 #31 (16 connections now open)
+2021-07-28T09:14:56.969-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52690 #32 (17 connections now open)
+2021-07-28T09:14:56.993-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52691 #33 (18 connections now open)
+2021-07-28T09:14:57.843-0600 I NETWORK  [conn33] end connection 127.0.0.1:52691 (17 connections now open)
+2021-07-28T09:14:57.843-0600 I NETWORK  [conn32] end connection 127.0.0.1:52690 (17 connections now open)
+2021-07-28T09:15:04.308-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52695 #34 (17 connections now open)
+2021-07-28T09:15:04.325-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52696 #35 (18 connections now open)
+2021-07-28T09:15:17.777-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52709 #36 (19 connections now open)
+2021-07-28T09:15:17.798-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52710 #37 (20 connections now open)
+2021-07-28T09:15:18.587-0600 I NETWORK  [conn37] end connection 127.0.0.1:52710 (19 connections now open)
+2021-07-28T09:15:18.587-0600 I NETWORK  [conn36] end connection 127.0.0.1:52709 (19 connections now open)
+2021-07-28T09:15:25.042-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52711 #38 (19 connections now open)
+2021-07-28T09:15:25.059-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52712 #39 (20 connections now open)
+2021-07-28T09:15:36.147-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52713 #40 (21 connections now open)
+2021-07-28T09:15:36.174-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52714 #41 (22 connections now open)
+2021-07-28T09:15:37.423-0600 I NETWORK  [conn41] end connection 127.0.0.1:52714 (21 connections now open)
+2021-07-28T09:15:37.424-0600 I NETWORK  [conn40] end connection 127.0.0.1:52713 (21 connections now open)
+2021-07-28T09:15:43.973-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52729 #42 (21 connections now open)
+2021-07-28T09:15:43.989-0600 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:52730 #43 (22 connections now open)
+2021-07-28T10:22:28.888-0600 I NETWORK  [conn42] end connection 127.0.0.1:52729 (21 connections now open)
+2021-07-28T10:22:28.889-0600 I NETWORK  [conn43] end connection 127.0.0.1:52730 (20 connections now open)
+2021-07-28T10:22:28.890-0600 I NETWORK  [conn39] end connection 127.0.0.1:52712 (19 connections now open)
+2021-07-28T10:22:28.890-0600 I NETWORK  [conn38] end connection 127.0.0.1:52711 (19 connections now open)
+2021-07-28T10:22:28.891-0600 I NETWORK  [conn34] end connection 127.0.0.1:52695 (19 connections now open)
+2021-07-28T10:22:28.891-0600 I NETWORK  [conn35] end connection 127.0.0.1:52696 (17 connections now open)
+2021-07-28T10:22:28.892-0600 I NETWORK  [conn31] end connection 127.0.0.1:52686 (15 connections now open)
+2021-07-28T10:22:28.892-0600 I NETWORK  [conn26] end connection 127.0.0.1:52678 (14 connections now open)
+2021-07-28T10:22:28.893-0600 I NETWORK  [conn30] end connection 127.0.0.1:52685 (14 connections now open)
+2021-07-28T10:22:28.893-0600 I NETWORK  [conn27] end connection 127.0.0.1:52679 (13 connections now open)

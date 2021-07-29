@@ -1015,15 +1015,15 @@
                 "display_name_short": "weather_file_name",
                 "name": "weather_file_name",
                 "value_type": "string",
-                "default_value": "USA_CA_San.Diego-Lindbergh.Field.722900_TMY3.epw",
-                "value": "USA_CA_San.Diego-Lindbergh.Field.722900_TMY3.epw"
+                "default_value": "USA_AZ_Tucson.Intl.AP.722740_TMY3.epw",
+                "value": "USA_AZ_Tucson.Intl.AP.722740_TMY3.epw"
               },
               "display_name": "Weather File Name",
               "display_name_short": "weather_file_name",
               "variable_type": "variable",
               "minimum": "",
               "maximum": "",
-              "static_value": "USA_CA_San.Diego-Lindbergh.Field.722900_TMY3.epw",
+              "static_value": "USA_AZ_Tucson.Intl.AP.722740_TMY3.epw",
               "uuid": "",
               "version_uuid": "",
               "variable": true,
@@ -1205,7 +1205,7 @@
               "name": "single_floor_area",
               "value_type": "double",
               "default_value": 0,
-              "value": 18000
+              "value": 50000
             },
             {
               "display_name": "Typical Floor to FLoor Height",
@@ -1245,7 +1245,7 @@
               "name": "template",
               "value_type": "string",
               "default_value": "90.1-2004",
-              "value": "90.1-2007"
+              "value": "90.1-2010"
             },
             {
               "display_name": "Ratio of North/South Facade Length Relative to East/West Facade Length",
@@ -1645,7 +1645,7 @@
               "name": "template",
               "value_type": "string",
               "default_value": "90.1-2010",
-              "value": "90.1-2007"
+              "value": "90.1-2010"
             },
             {
               "display_name": "HVAC System Type",
@@ -1894,9 +1894,9 @@
           "measure_definition_name": "add_thermochromic_bipv",
           "measure_definition_name_xml": null,
           "measure_definition_uuid": "11088181-e92b-42d3-a1d0-91d4d0261dbb",
-          "measure_definition_version_uuid": "ce22cfa8-ce2d-4ef3-864b-ef02fe311f69",
+          "measure_definition_version_uuid": "38b96281-2533-442b-b0e2-6c6a249d9fb5",
           "uuid": "11088181-e92b-42d3-a1d0-91d4d0261dbb",
-          "version_uuid": "ce22cfa8-ce2d-4ef3-864b-ef02fe311f69",
+          "version_uuid": "38b96281-2533-442b-b0e2-6c6a249d9fb5",
           "description": "Adds BIPV (Building Integrated Photovoltaic) on window surfaces. Define switching temperature for thermochromic windows. Implement power conversion efficiency difference between light and dark state windows.",
           "taxonomy": "Onsite Power Generation.Photovoltaic",
           "arguments": [
@@ -1907,6 +1907,22 @@
               "value_type": "double",
               "default_value": 1,
               "value": 1
+            },
+            {
+              "display_name": "Fixed PV power conversion efficiency",
+              "display_name_short": "pv_eff",
+              "name": "pv_eff",
+              "value_type": "double",
+              "default_value": 0.05,
+              "value": 0.05
+            },
+            {
+              "display_name": "Using tinted level and IQE (Ideal Quantum Efficiency) for PCE lookup?",
+              "display_name_short": "use_tint_iqe",
+              "name": "use_tint_iqe",
+              "value_type": "boolean",
+              "default_value": false,
+              "value": true
             },
             {
               "display_name": "Fixed Inverter Efficiency",
@@ -1960,20 +1976,53 @@
           "variables": [
             {
               "argument": {
-                "display_name": "Fixed PV power conversion efficiency",
-                "display_name_short": "pv_eff",
-                "name": "pv_eff",
-                "value_type": "double",
-                "default_value": 0.05,
-                "value": 0.05
+                "display_name": "iqe",
+                "display_name_short": "iqe",
+                "name": "iqe",
+                "value_type": "string",
+                "default_value": "25pct_N_IQE0",
+                "value": "25pct_N_IQE0",
+                "choice_display_names": [
+                  "50pct_S_IQE0",
+                  "50pct_S_IQE0pt4",
+                  "50pct_S_IQE0pt6",
+                  "50pct_S_IQE0pt8",
+                  "50pct_N_IQE0",
+                  "50pct_N_IQE0pt4",
+                  "50pct_N_IQE0pt6",
+                  "50pct_N_IQE0pt8",
+                  "25pct_N_IQE0",
+                  "25pct_N_IQE0pt4",
+                  "25pct_N_IQE0pt6",
+                  "25pct_N_IQE0pt8",
+                  "20pct_N_IQE0",
+                  "20pct_N_IQE0pt4",
+                  "20pct_N_IQE0pt6",
+                  "20pct_N_IQE0pt8",
+                  "15pct_N_IQE0",
+                  "15pct_N_IQE0pt4",
+                  "15pct_N_IQE0pt6",
+                  "15pct_N_IQE0pt8",
+                  "10pct_N_IQE0",
+                  "10pct_N_IQE0pt4",
+                  "10pct_N_IQE0pt6",
+                  "10pct_N_IQE0pt8",
+                  "5pct_N_IQE0",
+                  "5pct_N_IQE0pt4",
+                  "5pct_N_IQE0pt6",
+                  "5pct_N_IQE0pt8",
+                  "0pt5pct_N_IQE0",
+                  "0pt5pct_N_IQE0pt4",
+                  "0pt5pct_N_IQE0pt6",
+                  "0pt5pct_N_IQE0pt8"
+                ]
               },
-              "display_name": "Fixed PV power conversion efficiency",
-              "display_name_short": "pv_eff",
+              "display_name": "iqe",
+              "display_name_short": "iqe",
               "variable_type": "variable",
-              "units": "fraction",
-              "minimum": 0.05,
-              "maximum": 0.05,
-              "static_value": 0.05,
+              "minimum": "25pct_N_IQE0",
+              "maximum": "25pct_N_IQE0",
+              "static_value": "25pct_N_IQE0",
               "uuid": "",
               "version_uuid": "",
               "variable": true,
@@ -1984,38 +2033,62 @@
                     "name": "discrete",
                     "values_and_weights": [
                       {
-                        "value": 0.04,
-                        "weight": 0.33
+                        "value": "50pct_S_IQE0pt4",
+                        "weight": 0.11
                       },
                       {
-                        "value": 0.06,
-                        "weight": 0.33
+                        "value": "50pct_S_IQE0pt6",
+                        "weight": 0.11
                       },
                       {
-                        "value": 0.08,
-                        "weight": 0.34
+                        "value": "50pct_S_IQE0pt8",
+                        "weight": 0.11
+                      },
+                      {
+                        "value": "50pct_N_IQE0pt4",
+                        "weight": 0.11
+                      },
+                      {
+                        "value": "50pct_N_IQE0pt6",
+                        "weight": 0.11
+                      },
+                      {
+                        "value": "50pct_N_IQE0pt8",
+                        "weight": 0.11
+                      },
+                      {
+                        "value": "25pct_N_IQE0pt4",
+                        "weight": 0.11
+                      },
+                      {
+                        "value": "25pct_N_IQE0pt6",
+                        "weight": 0.11
+                      },
+                      {
+                        "value": "25pct_N_IQE0pt8",
+                        "weight": 0.12
                       }
                     ]
                   },
                   {
                     "name": "lower_bounds",
-                    "value": 0.05
+                    "value": "25pct_N_IQE0"
                   },
                   {
                     "name": "upper_bounds",
-                    "value": 0.05
+                    "value": "25pct_N_IQE0"
                   },
                   {
                     "name": "modes",
-                    "value": 0.05
+                    "value": "25pct_N_IQE0"
                   },
                   {
                     "name": "delta_x",
-                    "value": 0.05
+                    "value": "25pct_N_IQE0"
                   },
                   {
                     "name": "stddev",
-                    "value": 0.05
+                    "value": "25pct_N_IQE0"
                   }
                 ]
               },
@@ -2028,7 +2101,7 @@
                 "name": "facade",
                 "value_type": "string",
                 "default_value": "S",
-                "value": "NONE",
+                "value": "ALL",
                 "choice_display_names": [
                   "N",
                   "E",
@@ -2044,7 +2117,7 @@
               "variable_type": "variable",
               "minimum": "S",
               "maximum": "S",
-              "static_value": "NONE",
+              "static_value": "ALL",
               "uuid": "",
               "version_uuid": "",
               "variable": true,
@@ -2363,17 +2436,25 @@
           "measure_type": "EnergyPlusMeasure",
           "measure_definition_class_name": "AInjectWindowSpecificIDFObjects",
           "measure_definition_directory": "./measures/a_inject_window_specific_idf_objects",
-          "measure_definition_directory_local": "C:/Users/JKIM4/Documents/GitHub/SG_Measures/Measure_OS_3_0/a_inject_window_specific_idf_objects",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v1_Group3\\measures\\a_inject_window_specific_idf_objects",
           "measure_definition_display_name": " Inject Window Specific IDF Objects",
           "measure_definition_name": "a_inject_window_specific_idf_objects",
           "measure_definition_name_xml": null,
           "measure_definition_uuid": "b5cd7571-8ee9-4657-845b-43513fd2b983",
-          "measure_definition_version_uuid": "5fc78ae3-c26a-455c-ab6e-0d6bf095065b",
+          "measure_definition_version_uuid": "34793647-bc36-4854-9db4-87ce454fde35",
           "uuid": "b5cd7571-8ee9-4657-845b-43513fd2b983",
-          "version_uuid": "5fc78ae3-c26a-455c-ab6e-0d6bf095065b",
+          "version_uuid": "34793647-bc36-4854-9db4-87ce454fde35",
           "description": "This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus.",
           "taxonomy": "Envelope.Fenestration",
           "arguments": [
+            {
+              "display_name": "Choice of IGU",
+              "display_name_short": "glztype",
+              "name": "glztype",
+              "value_type": "string",
+              "default_value": "SwitchGlaze",
+              "value": "Tinted"
+            },
             {
               "display_name": "Choice of window",
               "display_name_short": "choice",
@@ -2407,181 +2488,7 @@
               "value": true
             }
           ],
-          "variables": [
-            {
-              "argument": {
-                "display_name": "Choice of IGU",
-                "display_name_short": "glztype",
-                "name": "glztype",
-                "value_type": "string",
-                "default_value": "SwitchGlaze",
-                "value": "SwitchGlaze",
-                "choice_display_names": [
-                  "======================",
-                  "NEXT Energy Scenarios",
-                  "======================",
-                  "ASHRAE_Simplified",
-                  "Baseline_GlzSys6",
-                  "Baseline_GlzSys13",
-                  "Baseline_GlzSys15",
-                  "Baseline_GlzSys6_13",
-                  "Baseline_GlzSys15_withPV",
-                  "GlzSys_6_withoutPV",
-                  "GlzSys_13_withoutPV",
-                  "GlzSys_6_withPV",
-                  "GlzSys_13_withPV",
-                  "======================",
-                  "ASHRAE_Detailed",
-                  "======================",
-                  "VeryHot_ASHRAE",
-                  "Hot_ASHRAE",
-                  "Cold_ASHRAE",
-                  "VeryCold_ASHRAE",
-                  "======================",
-                  "Tinted_25pct_N",
-                  "======================",
-                  "VeryHot_Tinted_25pct_N_IQE0",
-                  "Hot_Tinted_25pct_N_IQE0",
-                  "Cold_Tinted_25pct_N_IQE0",
-                  "VeryCold_Tinted_25pct_N_IQE0",
-                  "======================",
-                  "VeryHot_Tinted_25pct_N_IQE0pt4",
-                  "Hot_Tinted_25pct_N_IQE0pt4",
-                  "Cold_Tinted_25pct_N_IQE0pt4",
-                  "VeryCold_Tinted_25pct_N_IQE0pt4",
-                  "======================",
-                  "VeryHot_Tinted_25pct_N_IQE0pt6",
-                  "Hot_Tinted_25pct_N_IQE0pt6",
-                  "Cold_Tinted_25pct_N_IQE0pt6",
-                  "VeryCold_Tinted_25pct_N_IQE0pt6",
-                  "======================",
-                  "VeryHot_Tinted_25pct_N_IQE0pt8",
-                  "Hot_Tinted_25pct_N_IQE0pt8",
-                  "Cold_Tinted_25pct_N_IQE0pt8",
-                  "VeryCold_Tinted_25pct_N_IQE0pt8",
-                  "======================",
-                  "Tinted_50pct_N",
-                  "======================",
-                  "VeryHot_Tinted_50pct_N_IQE0",
-                  "Hot_Tinted_50pct_N_IQE0",
-                  "Cold_Tinted_50pct_N_IQE0",
-                  "VeryCold_Tinted_50pct_N_IQE0",
-                  "======================",
-                  "VeryHot_Tinted_50pct_N_IQE0pt4",
-                  "Hot_Tinted_50pct_N_IQE0pt4",
-                  "Cold_Tinted_50pct_N_IQE0pt4",
-                  "VeryCold_Tinted_50pct_N_IQE0pt4",
-                  "======================",
-                  "VeryHot_Tinted_50pct_N_IQE0pt6",
-                  "Hot_Tinted_50pct_N_IQE0pt6",
-                  "Cold_Tinted_50pct_N_IQE0pt6",
-                  "VeryCold_Tinted_50pct_N_IQE0pt6",
-                  "======================",
-                  "VeryHot_Tinted_50pct_N_IQE0pt8",
-                  "Hot_Tinted_50pct_N_IQE0pt8",
-                  "Cold_Tinted_50pct_N_IQE0pt8",
-                  "VeryCold_Tinted_50pct_N_IQE0pt8",
-                  "======================",
-                  "Tinted_50pct_S",
-                  "======================",
-                  "VeryHot_Tinted_50pct_S_IQE0",
-                  "Hot_Tinted_50pct_S_IQE0",
-                  "Cold_Tinted_50pct_S_IQE0",
-                  "VeryCold_Tinted_50pct_S_IQE0",
-                  "======================",
-                  "VeryHot_Tinted_50pct_S_IQE0pt4",
-                  "Hot_Tinted_50pct_S_IQE0pt4",
-                  "Cold_Tinted_50pct_S_IQE0pt4",
-                  "VeryCold_Tinted_50pct_S_IQE0pt4",
-                  "======================",
-                  "VeryHot_Tinted_50pct_S_IQE0pt6",
-                  "Hot_Tinted_50pct_S_IQE0pt6",
-                  "Cold_Tinted_50pct_S_IQE0pt6",
-                  "VeryCold_Tinted_50pct_S_IQE0pt6",
-                  "======================",
-                  "VeryHot_Tinted_50pct_S_IQE0pt8",
-                  "Hot_Tinted_50pct_S_IQE0pt8",
-                  "Cold_Tinted_50pct_S_IQE0pt8",
-                  "VeryCold_Tinted_50pct_S_IQE0pt8",
-                  "======================",
-                  "SwitchGlaze",
-                  "======================",
-                  "VeryHot_SwitchGlaze",
-                  "Hot_SwitchGlaze",
-                  "Cold_SwitchGlaze",
-                  "VeryCold_SwitchGlaze",
-                  "======================",
-                  "Old Windows",
-                  "======================",
-                  "Single_Pane",
-                  "Double_Pane",
-                  "======================",
-                  "Others",
-                  "======================",
-                  "VeryHot_Dark",
-                  "VeryHot_Light",
-                  "Hot_Dark",
-                  "Hot_Light",
-                  "Cold_Dark",
-                  "Cold_Light",
-                  "VeryCold_Dark",
-                  "VeryCold_Light"
-                ]
-              },
-              "display_name": "Choice of IGU",
-              "display_name_short": "glztype",
-              "variable_type": "variable",
-              "minimum": "SwitchGlaze",
-              "maximum": "SwitchGlaze",
-              "static_value": "SwitchGlaze",
-              "uuid": "",
-              "version_uuid": "",
-              "variable": true,
-              "uncertainty_description": {
-                "type": "discrete",
-                "attributes": [
-                  {
-                    "name": "discrete",
-                    "values_and_weights": [
-                      {
-                        "value": "Tinted_25pct_N",
-                        "weight": 0.33
-                      },
-                      {
-                        "value": "Tinted_50pct_N",
-                        "weight": 0.33
-                      },
-                      {
-                        "value": "Tinted_50pct_S",
-                        "weight": 0.34
-                      }
-                    ]
-                  },
-                  {
-                    "name": "lower_bounds",
-                    "value": "SwitchGlaze"
-                  },
-                  {
-                    "name": "upper_bounds",
-                    "value": "SwitchGlaze"
-                  },
-                  {
-                    "name": "modes",
-                    "value": "SwitchGlaze"
-                  },
-                  {
-                    "name": "delta_x",
-                    "value": "SwitchGlaze"
-                  },
-                  {
-                    "name": "stddev",
-                    "value": "SwitchGlaze"
-                  }
-                ]
-              },
-              "workflow_index": 0
-            }
-          ],
+          "variables": [],
           "workflow_index": 10
         },
         {
@@ -2603,6 +2510,123 @@
           "arguments": [],
           "variables": [],
           "workflow_index": 11
+        },
+        {
+          "name": "server_directory_cleanup",
+          "display_name": "Server Directory Cleanup",
+          "measure_type": "ReportingMeasure",
+          "measure_definition_class_name": "ServerDirectoryCleanup",
+          "measure_definition_directory": "./measures/ServerDirectoryCleanup",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v1_Group3\\measures\\ServerDirectoryCleanup",
+          "measure_definition_display_name": "Server Directory Cleanup",
+          "measure_definition_name": "server_directory_cleanup",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "ec7d04ad-0b7b-495b-825a-e1b6d28d1d3f",
+          "measure_definition_version_uuid": "95fce446-c6c5-4594-9332-6e3332b81ab1",
+          "uuid": "ec7d04ad-0b7b-495b-825a-e1b6d28d1d3f",
+          "version_uuid": "95fce446-c6c5-4594-9332-6e3332b81ab1",
+          "description": "Removes a significant portion of the saved results from each run, helping to alleviate memory problems.",
+          "taxonomy": "Reporting.Troubleshooting",
+          "arguments": [
+            {
+              "display_name": "Remove sql files from run directory",
+              "display_name_short": "sql",
+              "name": "sql",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove eso files from run directory",
+              "display_name_short": "eso",
+              "name": "eso",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove audit files from run directory",
+              "display_name_short": "audit",
+              "name": "audit",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove osm files from run directory",
+              "display_name_short": "osm",
+              "name": "osm",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove idf files from run directory",
+              "display_name_short": "idf",
+              "name": "idf",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove bnd files from run directory",
+              "display_name_short": "bnd",
+              "name": "bnd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove eio files from run directory",
+              "display_name_short": "eio",
+              "name": "eio",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove shd files from run directory",
+              "display_name_short": "shd",
+              "name": "shd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove mdd files from run directory",
+              "display_name_short": "mdd",
+              "name": "mdd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove rdd files from run directory",
+              "display_name_short": "rdd",
+              "name": "rdd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove csv files from run directory",
+              "display_name_short": "csv",
+              "name": "csv",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove Sizing Run Directories files from run directory",
+              "display_name_short": "Sizing Run Directories",
+              "name": "Sizing Run Directories",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            }
+          ],
+          "variables": [],
+          "workflow_index": 12
         }
       ],
       "algorithm": {

@@ -1,0 +1,2392 @@
+{
+  "analysis": {
+    "display_name": "SG_v0",
+    "name": "SG_v0",
+    "output_variables": [
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_pv",
+        "display_name_short": "total_pv",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_pv",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_area_ft",
+        "display_name_short": "building_area_ft",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_area_ft",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "capacity_factor",
+        "display_name_short": "capacity_factor",
+        "metadata_id": null,
+        "name": "window_pv_reporting.capacity_factor",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity",
+        "display_name_short": "total_electricity",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_heating",
+        "display_name_short": "total_electricity_heating",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_heating",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_cooling",
+        "display_name_short": "total_electricity_cooling",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_cooling",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_lighting_interior",
+        "display_name_short": "total_electricity_lighting_interior",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_lighting_interior",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_lighting_exterior",
+        "display_name_short": "total_electricity_lighting_exterior",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_lighting_exterior",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_equipment_interior",
+        "display_name_short": "total_electricity_equipment_interior",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_equipment_interior",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_fan",
+        "display_name_short": "total_electricity_fan",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_fan",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_pump",
+        "display_name_short": "total_electricity_pump",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_pump",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_heatrejection",
+        "display_name_short": "total_electricity_heatrejection",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_heatrejection",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_humidification",
+        "display_name_short": "total_electricity_humidification",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_humidification",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_heatrecovery",
+        "display_name_short": "total_electricity_heatrecovery",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_heatrecovery",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_watersystem",
+        "display_name_short": "total_electricity_watersystem",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_watersystem",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_electricity_refrigeration",
+        "display_name_short": "total_electricity_refrigeration",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_electricity_refrigeration",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_gas",
+        "display_name_short": "total_gas",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_gas",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_gas_heating",
+        "display_name_short": "total_gas_heating",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_gas_heating",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_gas_equipment_interior",
+        "display_name_short": "total_gas_equipment_interior",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_gas_equipment_interior",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "total_gas_watersystem",
+        "display_name_short": "total_gas_watersystem",
+        "metadata_id": null,
+        "name": "window_pv_reporting.total_gas_watersystem",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_jan",
+        "display_name_short": "panel_dc_gen_jan",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_jan",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_feb",
+        "display_name_short": "panel_dc_gen_feb",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_feb",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_mar",
+        "display_name_short": "panel_dc_gen_mar",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_mar",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_apr",
+        "display_name_short": "panel_dc_gen_apr",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_apr",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_may",
+        "display_name_short": "panel_dc_gen_may",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_may",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_jun",
+        "display_name_short": "panel_dc_gen_jun",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_jun",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_jul",
+        "display_name_short": "panel_dc_gen_jul",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_jul",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_aug",
+        "display_name_short": "panel_dc_gen_aug",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_aug",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_sep",
+        "display_name_short": "panel_dc_gen_sep",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_sep",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_oct",
+        "display_name_short": "panel_dc_gen_oct",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_oct",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_nov",
+        "display_name_short": "panel_dc_gen_nov",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_nov",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "panel_dc_gen_dec",
+        "display_name_short": "panel_dc_gen_dec",
+        "metadata_id": null,
+        "name": "window_pv_reporting.panel_dc_gen_dec",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_jan",
+        "display_name_short": "light_energy_jan",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_jan",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_feb",
+        "display_name_short": "light_energy_feb",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_feb",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_mar",
+        "display_name_short": "light_energy_mar",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_mar",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_apr",
+        "display_name_short": "light_energy_apr",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_apr",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_may",
+        "display_name_short": "light_energy_may",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_may",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_jun",
+        "display_name_short": "light_energy_jun",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_jun",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_jul",
+        "display_name_short": "light_energy_jul",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_jul",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_aug",
+        "display_name_short": "light_energy_aug",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_aug",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_sep",
+        "display_name_short": "light_energy_sep",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_sep",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_oct",
+        "display_name_short": "light_energy_oct",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_oct",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_nov",
+        "display_name_short": "light_energy_nov",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_nov",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "light_energy_dec",
+        "display_name_short": "light_energy_dec",
+        "metadata_id": null,
+        "name": "window_pv_reporting.light_energy_dec",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_jan",
+        "display_name_short": "building_elec_jan",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_jan",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_feb",
+        "display_name_short": "building_elec_feb",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_feb",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_mar",
+        "display_name_short": "building_elec_mar",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_mar",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_apr",
+        "display_name_short": "building_elec_apr",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_apr",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_may",
+        "display_name_short": "building_elec_may",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_may",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_jun",
+        "display_name_short": "building_elec_jun",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_jun",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_jul",
+        "display_name_short": "building_elec_jul",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_jul",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_aug",
+        "display_name_short": "building_elec_aug",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_aug",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_sep",
+        "display_name_short": "building_elec_sep",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_sep",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_oct",
+        "display_name_short": "building_elec_oct",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_oct",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_nov",
+        "display_name_short": "building_elec_nov",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_nov",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_elec_dec",
+        "display_name_short": "building_elec_dec",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_elec_dec",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_jan",
+        "display_name_short": "building_gas_jan",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_jan",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_feb",
+        "display_name_short": "building_gas_feb",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_feb",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_mar",
+        "display_name_short": "building_gas_mar",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_mar",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_apr",
+        "display_name_short": "building_gas_apr",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_apr",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_may",
+        "display_name_short": "building_gas_may",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_may",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_jun",
+        "display_name_short": "building_gas_jun",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_jun",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_jul",
+        "display_name_short": "building_gas_jul",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_jul",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_aug",
+        "display_name_short": "building_gas_aug",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_aug",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_sep",
+        "display_name_short": "building_gas_sep",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_sep",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_oct",
+        "display_name_short": "building_gas_oct",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_oct",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_nov",
+        "display_name_short": "building_gas_nov",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_nov",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      },
+      {
+        "objective_function": false,
+        "objective_function_index": null,
+        "objective_function_target": null,
+        "objective_function_group": null,
+        "scaling_factor": null,
+        "display_name": "building_gas_dec",
+        "display_name_short": "building_gas_dec",
+        "metadata_id": null,
+        "name": "window_pv_reporting.building_gas_dec",
+        "visualize": true,
+        "export": true,
+        "variable_type": "double"
+      }
+    ],
+    "problem": {
+      "workflow": [
+        {
+          "name": "change_building_location",
+          "display_name": "ChangeBuildingLocation",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "ChangeBuildingLocation",
+          "measure_definition_directory": "./measures/ChangeBuildingLocation",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\ChangeBuildingLocation",
+          "measure_definition_display_name": "ChangeBuildingLocation",
+          "measure_definition_name": "change_building_location",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "d4db4971-f5ba-11e3-a3ac-0800200c9a66",
+          "measure_definition_version_uuid": "0c3c39a2-f5d3-43c1-bdc0-7a32a9379f1a",
+          "uuid": "d4db4971-f5ba-11e3-a3ac-0800200c9a66",
+          "version_uuid": "0c3c39a2-f5d3-43c1-bdc0-7a32a9379f1a",
+          "description": "Change the building location",
+          "taxonomy": "Whole Building.Space Types",
+          "arguments": [
+            {
+              "display_name": "Climate Zone.",
+              "display_name_short": "climate_zone",
+              "name": "climate_zone",
+              "value_type": "string",
+              "default_value": "Lookup From Stat File",
+              "value": "Lookup From Stat File"
+            },
+            {
+              "display_name": "Set Calendar Year",
+              "display_name_short": "set_year",
+              "name": "set_year",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Use Upstream Argument Values",
+              "display_name_short": "use_upstream_args",
+              "name": "use_upstream_args",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Find and replace option from existing weather file name.",
+              "display_name_short": "epw_gsub",
+              "name": "epw_gsub",
+              "value_type": "string",
+              "default_value": "Do Nothing",
+              "value": "Do Nothing"
+            }
+          ],
+          "variables": [
+            {
+              "argument": {
+                "display_name": "Weather File Name",
+                "display_name_short": "weather_file_name",
+                "name": "weather_file_name",
+                "value_type": "string",
+                "default_value": "USA_AZ_Tucson.Intl.AP.722740_TMY3.epw",
+                "value": "USA_AZ_Tucson.Intl.AP.722740_TMY3.epw"
+              },
+              "display_name": "Weather File Name",
+              "display_name_short": "weather_file_name",
+              "variable_type": "variable",
+              "minimum": "",
+              "maximum": "",
+              "static_value": "USA_AZ_Tucson.Intl.AP.722740_TMY3.epw",
+              "uuid": "",
+              "version_uuid": "",
+              "variable": true,
+              "uncertainty_description": {
+                "type": "discrete",
+                "attributes": [
+                  {
+                    "name": "discrete",
+                    "values_and_weights": [
+                      {
+                        "value": "USA_AK_Fairbanks.Intl.AP.702610_TMY3.epw",
+                        "weight": 0.25
+                      },
+                      {
+                        "value": "USA_CO_Denver.Intl.AP.725650_TMY3.epw",
+                        "weight": 0.25
+                      },
+                      {
+                        "value": "USA_GA_Atlanta-Hartsfield-Jackson.Intl.AP.722190_TMY3.epw",
+                        "weight": 0.25
+                      },
+                      {
+                        "value": "USA_AZ_Tucson.Intl.AP.722740_TMY3.epw",
+                        "weight": 0.25
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lower_bounds",
+                    "value": ""
+                  },
+                  {
+                    "name": "upper_bounds",
+                    "value": ""
+                  },
+                  {
+                    "name": "modes",
+                    "value": ""
+                  },
+                  {
+                    "name": "delta_x",
+                    "value": ""
+                  },
+                  {
+                    "name": "stddev",
+                    "value": ""
+                  }
+                ]
+              },
+              "workflow_index": 0
+            }
+          ],
+          "workflow_index": 0
+        },
+        {
+          "name": "create_bar_from_building_type_ratios",
+          "display_name": "Create Bar From Building Type Ratios",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "CreateBarFromBuildingTypeRatios",
+          "measure_definition_directory": "./measures/create_bar_from_building_type_ratios",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\create_bar_from_building_type_ratios",
+          "measure_definition_display_name": "Create Bar From Building Type Ratios",
+          "measure_definition_name": "create_bar_from_building_type_ratios",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "6e3a14f8-c3c7-4e03-bc51-bef8a52e1a05",
+          "measure_definition_version_uuid": "c569be27-f463-4721-8bfb-72bd6775d70e",
+          "uuid": "6e3a14f8-c3c7-4e03-bc51-bef8a52e1a05",
+          "version_uuid": "c569be27-f463-4721-8bfb-72bd6775d70e",
+          "description": "Creates one or more rectangular building elements based on space type ratios of selected mix of building types, along with user arguments that describe the desired geometry characteristics.",
+          "taxonomy": "Envelope.Form",
+          "arguments": [
+            {
+              "display_name": "Primary Building Type",
+              "display_name_short": "bldg_type_a",
+              "name": "bldg_type_a",
+              "value_type": "string",
+              "default_value": "SmallOffice",
+              "value": "MediumOffice"
+            },
+            {
+              "display_name": "Primary Building Type Number of Units",
+              "display_name_short": "bldg_type_a_num_units",
+              "name": "bldg_type_a_num_units",
+              "value_type": "integer",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Building Type B",
+              "display_name_short": "bldg_type_b",
+              "name": "bldg_type_b",
+              "value_type": "string",
+              "default_value": "SmallOffice",
+              "value": "SmallOffice"
+            },
+            {
+              "display_name": "Building Type B Fraction of Building Floor Area",
+              "display_name_short": "bldg_type_b_fract_bldg_area",
+              "name": "bldg_type_b_fract_bldg_area",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Building Type B Number of Units",
+              "display_name_short": "bldg_type_b_num_units",
+              "name": "bldg_type_b_num_units",
+              "value_type": "integer",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Building Type C",
+              "display_name_short": "bldg_type_c",
+              "name": "bldg_type_c",
+              "value_type": "string",
+              "default_value": "SmallOffice",
+              "value": "SmallOffice"
+            },
+            {
+              "display_name": "Building Type C Fraction of Building Floor Area",
+              "display_name_short": "bldg_type_c_fract_bldg_area",
+              "name": "bldg_type_c_fract_bldg_area",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Building Type C Number of Units",
+              "display_name_short": "bldg_type_c_num_units",
+              "name": "bldg_type_c_num_units",
+              "value_type": "integer",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Building Type D",
+              "display_name_short": "bldg_type_d",
+              "name": "bldg_type_d",
+              "value_type": "string",
+              "default_value": "SmallOffice",
+              "value": "SmallOffice"
+            },
+            {
+              "display_name": "Building Type D Fraction of Building Floor Area",
+              "display_name_short": "bldg_type_d_fract_bldg_area",
+              "name": "bldg_type_d_fract_bldg_area",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Building Type D Number of Units",
+              "display_name_short": "bldg_type_d_num_units",
+              "name": "bldg_type_d_num_units",
+              "value_type": "integer",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Total Building Floor Area",
+              "display_name_short": "total_bldg_floor_area",
+              "name": "total_bldg_floor_area",
+              "value_type": "double",
+              "default_value": 10000,
+              "value": 10000
+            },
+            {
+              "display_name": "Single Floor Area",
+              "display_name_short": "single_floor_area",
+              "name": "single_floor_area",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 50000
+            },
+            {
+              "display_name": "Typical Floor to FLoor Height",
+              "display_name_short": "floor_height",
+              "name": "floor_height",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Enable Custom Height Bar Application",
+              "display_name_short": "custom_height_bar",
+              "name": "custom_height_bar",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Number of Stories Above Grade",
+              "display_name_short": "num_stories_above_grade",
+              "name": "num_stories_above_grade",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 3
+            },
+            {
+              "display_name": "Number of Stories Below Grade",
+              "display_name_short": "num_stories_below_grade",
+              "name": "num_stories_below_grade",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Building Rotation",
+              "display_name_short": "building_rotation",
+              "name": "building_rotation",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Target Standard",
+              "display_name_short": "template",
+              "name": "template",
+              "value_type": "string",
+              "default_value": "90.1-2004",
+              "value": "90.1-2010"
+            },
+            {
+              "display_name": "Ratio of North/South Facade Length Relative to East/West Facade Length",
+              "display_name_short": "ns_to_ew_ratio",
+              "name": "ns_to_ew_ratio",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Perimeter Multiplier",
+              "display_name_short": "perim_mult",
+              "name": "perim_mult",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Bar Width",
+              "display_name_short": "bar_width",
+              "name": "bar_width",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Bar Separation Distance Multiplier",
+              "display_name_short": "bar_sep_dist_mult",
+              "name": "bar_sep_dist_mult",
+              "value_type": "double",
+              "default_value": 10,
+              "value": 10
+            },
+            {
+              "display_name": "Window to Wall Ratio",
+              "display_name_short": "wwr",
+              "name": "wwr",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0.7
+            },
+            {
+              "display_name": "Fraction of Exterior Wall Area with Adjacent Structure",
+              "display_name_short": "party_wall_fraction",
+              "name": "party_wall_fraction",
+              "value_type": "double",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Number of North facing stories with party wall",
+              "display_name_short": "party_wall_stories_north",
+              "name": "party_wall_stories_north",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Number of South facing stories with party wall",
+              "display_name_short": "party_wall_stories_south",
+              "name": "party_wall_stories_south",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Number of East facing stories with party wall",
+              "display_name_short": "party_wall_stories_east",
+              "name": "party_wall_stories_east",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Number of West facing stories with party wall",
+              "display_name_short": "party_wall_stories_west",
+              "name": "party_wall_stories_west",
+              "value_type": "integer",
+              "default_value": 0,
+              "value": 0
+            },
+            {
+              "display_name": "Is the Bottom Story Exposed to Ground",
+              "display_name_short": "bottom_story_ground_exposed_floor",
+              "name": "bottom_story_ground_exposed_floor",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Is the Top Story an Exterior Roof",
+              "display_name_short": "top_story_exterior_exposed_roof",
+              "name": "top_story_exterior_exposed_roof",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Calculation Method for Story Multiplier",
+              "display_name_short": "story_multiplier",
+              "name": "story_multiplier",
+              "value_type": "string",
+              "default_value": "Basements Ground Mid Top",
+              "value": "Basements Ground Mid Top"
+            },
+            {
+              "display_name": "Make Mid Story Floor Surfaces Adiabatic",
+              "display_name_short": "make_mid_story_surfaces_adiabatic",
+              "name": "make_mid_story_surfaces_adiabatic",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Division Method for Bar Space Types",
+              "display_name_short": "bar_division_method",
+              "name": "bar_division_method",
+              "value_type": "string",
+              "default_value": "Multiple Space Types - Individual Stories Sliced",
+              "value": "Single Space Type - Core and Perimeter"
+            },
+            {
+              "display_name": "Double Loaded Corridor",
+              "display_name_short": "double_loaded_corridor",
+              "name": "double_loaded_corridor",
+              "value_type": "string",
+              "default_value": "Primary Space Type",
+              "value": "Primary Space Type"
+            },
+            {
+              "display_name": "Choose Space Type Sorting Method",
+              "display_name_short": "space_type_sort_logic",
+              "name": "space_type_sort_logic",
+              "value_type": "string",
+              "default_value": "Building Type > Size",
+              "value": "Building Type > Size"
+            },
+            {
+              "display_name": "Use Upstream Argument Values",
+              "display_name_short": "use_upstream_args",
+              "name": "use_upstream_args",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Climate Zone",
+              "display_name_short": "climate_zone",
+              "name": "climate_zone",
+              "value_type": "string",
+              "default_value": "Lookup From Stat File",
+              "value": "Lookup From Stat File"
+            }
+          ],
+          "variables": [],
+          "workflow_index": 1
+        },
+        {
+          "name": "create_typical_building_from_model",
+          "display_name": "Create Typical Building from Model",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "CreateTypicalBuildingFromModel",
+          "measure_definition_directory": "./measures/create_typical_building_from_model",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\create_typical_building_from_model",
+          "measure_definition_display_name": "Create Typical Building from Model",
+          "measure_definition_name": "create_typical_building_from_model",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "339a2e3a-273c-4494-bb50-bfe586a0647c",
+          "measure_definition_version_uuid": "8024aeb3-803e-4ad5-b862-8b50aa8dc155",
+          "uuid": "339a2e3a-273c-4494-bb50-bfe586a0647c",
+          "version_uuid": "8024aeb3-803e-4ad5-b862-8b50aa8dc155",
+          "description": "Takes a model with space and stub space types, and assigns constructions, schedules, internal loads, hvac, and other loads such as exterior lights and service water heating.",
+          "taxonomy": "Whole Building.Space Types",
+          "arguments": [
+            {
+              "display_name": "Target Standard",
+              "display_name_short": "template",
+              "name": "template",
+              "value_type": "string",
+              "default_value": "90.1-2010",
+              "value": "90.1-2010"
+            },
+            {
+              "display_name": "HVAC System Type",
+              "display_name_short": "system_type",
+              "name": "system_type",
+              "value_type": "string",
+              "default_value": "Inferred",
+              "value": "Inferred"
+            },
+            {
+              "display_name": "HVAC System Delivery Type",
+              "display_name_short": "hvac_delivery_type",
+              "name": "hvac_delivery_type",
+              "value_type": "string",
+              "default_value": "Forced Air",
+              "value": "Forced Air"
+            },
+            {
+              "display_name": "HVAC Heating Source",
+              "display_name_short": "htg_src",
+              "name": "htg_src",
+              "value_type": "string",
+              "default_value": "NaturalGas",
+              "value": "NaturalGas"
+            },
+            {
+              "display_name": "HVAC Cooling Source",
+              "display_name_short": "clg_src",
+              "name": "clg_src",
+              "value_type": "string",
+              "default_value": "Electricity",
+              "value": "Electricity"
+            },
+            {
+              "display_name": "Service Water Heating Source",
+              "display_name_short": "swh_src",
+              "name": "swh_src",
+              "value_type": "string",
+              "default_value": "Inferred",
+              "value": "Inferred"
+            },
+            {
+              "display_name": "Kitchen Exhaust MakeUp Air Calculation Method",
+              "display_name_short": "kitchen_makeup",
+              "name": "kitchen_makeup",
+              "value_type": "string",
+              "default_value": "Adjacent",
+              "value": "None"
+            },
+            {
+              "display_name": "Exterior Lighting Zone",
+              "display_name_short": "exterior_lighting_zone",
+              "name": "exterior_lighting_zone",
+              "value_type": "string",
+              "default_value": "3 - All Other Areas",
+              "value": "3 - All Other Areas"
+            },
+            {
+              "display_name": "Add Constructions to Model",
+              "display_name_short": "add_constructions",
+              "name": "add_constructions",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add Space Type Loads to Model",
+              "display_name_short": "add_space_type_loads",
+              "name": "add_space_type_loads",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add Elevators to Model",
+              "display_name_short": "add_elevators",
+              "name": "add_elevators",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add Internal Mass to Model",
+              "display_name_short": "add_internal_mass",
+              "name": "add_internal_mass",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add Exterior Lights to Model",
+              "display_name_short": "add_exterior_lights",
+              "name": "add_exterior_lights",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": false
+            },
+            {
+              "display_name": "Onsite Parking Fraction",
+              "display_name_short": "onsite_parking_fraction",
+              "name": "onsite_parking_fraction",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 0
+            },
+            {
+              "display_name": "Add Exhaust Fans to Model",
+              "display_name_short": "add_exhaust",
+              "name": "add_exhaust",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": false
+            },
+            {
+              "display_name": "Add Service Water Heating to Model",
+              "display_name_short": "add_swh",
+              "name": "add_swh",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add Thermostats",
+              "display_name_short": "add_thermostat",
+              "name": "add_thermostat",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add HVAC System to Model",
+              "display_name_short": "add_hvac",
+              "name": "add_hvac",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Add Refrigeration to Model",
+              "display_name_short": "add_refrigeration",
+              "name": "add_refrigeration",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": false
+            },
+            {
+              "display_name": "Modify weekday hours of operation",
+              "display_name_short": "modify_wkdy_op_hrs",
+              "name": "modify_wkdy_op_hrs",
+              "value_type": "boolean",
+              "default_value": false,
+              "value": false
+            },
+            {
+              "display_name": "Weekday Operating Hours Start Time",
+              "display_name_short": "wkdy_op_hrs_start_time",
+              "name": "wkdy_op_hrs_start_time",
+              "value_type": "double",
+              "default_value": 8,
+              "value": 8
+            },
+            {
+              "display_name": "Weekday Operating Hours Duration",
+              "display_name_short": "wkdy_op_hrs_duration",
+              "name": "wkdy_op_hrs_duration",
+              "value_type": "double",
+              "default_value": 8,
+              "value": 8
+            },
+            {
+              "display_name": "Modify weekend hours of operation",
+              "display_name_short": "modify_wknd_op_hrs",
+              "name": "modify_wknd_op_hrs",
+              "value_type": "boolean",
+              "default_value": false,
+              "value": false
+            },
+            {
+              "display_name": "Weekend Operating Hours Start Time",
+              "display_name_short": "wknd_op_hrs_start_time",
+              "name": "wknd_op_hrs_start_time",
+              "value_type": "double",
+              "default_value": 8,
+              "value": 8
+            },
+            {
+              "display_name": "Weekend Operating Hours Duration",
+              "display_name_short": "wknd_op_hrs_duration",
+              "name": "wknd_op_hrs_duration",
+              "value_type": "double",
+              "default_value": 8,
+              "value": 8
+            },
+            {
+              "display_name": "Unmet Hours Tolerance",
+              "display_name_short": "unmet_hours_tolerance",
+              "name": "unmet_hours_tolerance",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Clean Model of non-geometry objects",
+              "display_name_short": "remove_objects",
+              "name": "remove_objects",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Use Upstream Argument Values",
+              "display_name_short": "use_upstream_args",
+              "name": "use_upstream_args",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": false
+            },
+            {
+              "display_name": "Enable Daylight Savings",
+              "display_name_short": "enable_dst",
+              "name": "enable_dst",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Climate Zone.",
+              "display_name_short": "climate_zone",
+              "name": "climate_zone",
+              "value_type": "string",
+              "default_value": "Lookup From Model",
+              "value": "Lookup From Model"
+            }
+          ],
+          "variables": [],
+          "workflow_index": 2
+        },
+        {
+          "name": "add_thermochromic_bipv",
+          "display_name": "Add Thermochromic BIPV",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "AddThermochromicBIPV",
+          "measure_definition_directory": "./measures/add_thermochromic_bipv",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\add_thermochromic_bipv",
+          "measure_definition_display_name": "Add Thermochromic BIPV",
+          "measure_definition_name": "add_thermochromic_bipv",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "11088181-e92b-42d3-a1d0-91d4d0261dbb",
+          "measure_definition_version_uuid": "35677f6c-d7d9-4e0f-8a32-0e98c7770fe1",
+          "uuid": "11088181-e92b-42d3-a1d0-91d4d0261dbb",
+          "version_uuid": "35677f6c-d7d9-4e0f-8a32-0e98c7770fe1",
+          "description": "Adds BIPV (Building Integrated Photovoltaic) on window surfaces. Define switching temperature for thermochromic windows. Implement power conversion efficiency difference between light and dark state windows.",
+          "taxonomy": "Onsite Power Generation.Photovoltaic",
+          "arguments": [
+            {
+              "display_name": "facade",
+              "display_name_short": "facade",
+              "name": "facade",
+              "value_type": "string",
+              "default_value": "S",
+              "value": "NONE"
+            },
+            {
+              "display_name": "Choice of power conversion efficiency modeling scenario",
+              "display_name_short": "pce_scenario",
+              "name": "pce_scenario",
+              "value_type": "string",
+              "default_value": "Static",
+              "value": "SwitchGlaze"
+            },
+            {
+              "display_name": "Active portion of PV from window surface area",
+              "display_name_short": "dot_coverage",
+              "name": "dot_coverage",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Dynamic power conversion efficiency?",
+              "display_name_short": "use_tint_iqe",
+              "name": "use_tint_iqe",
+              "value_type": "boolean",
+              "default_value": false,
+              "value": false
+            },
+            {
+              "display_name": "Fixed PV power conversion efficiency",
+              "display_name_short": "pv_eff",
+              "name": "pv_eff",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "Fixed Inverter Efficiency",
+              "display_name_short": "inverter_eff",
+              "name": "inverter_eff",
+              "value_type": "double",
+              "default_value": 1,
+              "value": 1
+            },
+            {
+              "display_name": "PV power conversion efficiency in light state",
+              "display_name_short": "pv_eff_light",
+              "name": "pv_eff_light",
+              "value_type": "double",
+              "default_value": 0.0053,
+              "value": 0.0053
+            },
+            {
+              "display_name": "PV power conversion efficiency in dark state",
+              "display_name_short": "pv_eff_dark",
+              "name": "pv_eff_dark",
+              "value_type": "double",
+              "default_value": 0.18,
+              "value": 0.18
+            },
+            {
+              "display_name": "State switching temperature for thermochromic window",
+              "display_name_short": "switch_t",
+              "name": "switch_t",
+              "value_type": "double",
+              "default_value": 30,
+              "value": 30
+            },
+            {
+              "display_name": "Debug Mode",
+              "display_name_short": "debug_mode",
+              "name": "debug_mode",
+              "value_type": "boolean",
+              "default_value": false,
+              "value": false
+            }
+          ],
+          "variables": [
+            {
+              "argument": {
+                "display_name": "iqe",
+                "display_name_short": "iqe",
+                "name": "iqe",
+                "value_type": "string",
+                "default_value": "Tr_0pt5%_N_I0",
+                "value": "Tr_0pt5%_N_I0",
+                "choice_display_names": [
+                  "Tnt_50%_S_I0",
+                  "Tnt_50%_S_I0pt4",
+                  "Tnt_50%_S_I0pt6",
+                  "Tnt_50%_S_I0pt8",
+                  "Tnt_50%_N_I0",
+                  "Tnt_50%_N_I0pt4",
+                  "Tnt_50%_N_I0pt6",
+                  "Tnt_50%_N_I0pt8",
+                  "Tnt_25%_N_I0",
+                  "Tnt_25%_N_I0pt4",
+                  "Tnt_25%_N_I0pt6",
+                  "Tnt_25%_N_I0pt8",
+                  "Tnt_20%_N_I0",
+                  "Tnt_20%_N_I0pt4",
+                  "Tnt_20%_N_I0pt6",
+                  "Tnt_20%_N_I0pt8",
+                  "Tnt_15%_N_I0",
+                  "Tnt_15%_N_I0pt4",
+                  "Tnt_15%_N_I0pt6",
+                  "Tnt_15%_N_I0pt8",
+                  "Tnt_10%_N_I0",
+                  "Tnt_10%_N_I0pt4",
+                  "Tnt_10%_N_I0pt6",
+                  "Tnt_10%_N_I0pt8",
+                  "Tnt_5%_N_I0",
+                  "Tnt_5%_N_I0pt4",
+                  "Tnt_5%_N_I0pt6",
+                  "Tnt_5%_N_I0pt8",
+                  "Tnt_0pt5%_N_I0",
+                  "Tnt_0pt5%_N_I0pt4",
+                  "Tnt_0pt5%_N_I0pt6",
+                  "Tnt_0pt5%_N_I0pt8",
+                  "Tr_0pt5%_N_I0",
+                  "Tr_0pt5%_N_I0pt4",
+                  "Tr_0pt5%_N_I0pt6",
+                  "Tr_0pt5%_N_I0pt8",
+                  "Tr_5%_N_I0",
+                  "Tr_5%_N_I0pt4",
+                  "Tr_5%_N_I0pt6",
+                  "Tr_5%_N_I0pt8",
+                  "V_0pt5%_N_I0",
+                  "V_0pt5%_N_I0pt4",
+                  "V_0pt5%_N_I0pt6",
+                  "V_0pt5%_N_I0pt8",
+                  "V_5%_N_I0",
+                  "V_5%_N_I0pt4",
+                  "V_5%_N_I0pt6",
+                  "V_5%_N_I0pt8",
+                  "Tr_25%_N_I0",
+                  "Tr_25%_N_I0pt4",
+                  "Tr_25%_N_I0pt6",
+                  "Tr_25%_N_I0pt8",
+                  "Tr_50%_N_I0",
+                  "Tr_50%_N_I0pt4",
+                  "Tr_50%_N_I0pt6",
+                  "Tr_50%_N_I0pt8",
+                  "Tr_50%_S_I0",
+                  "Tr_50%_S_I0pt4",
+                  "Tr_50%_S_I0pt6",
+                  "Tr_50%_S_I0pt8",
+                  "V_25%_N_I0",
+                  "V_25%_N_I0pt4",
+                  "V_25%_N_I0pt6",
+                  "V_25%_N_I0pt8",
+                  "V_50%_N_I0",
+                  "V_50%_N_I0pt4",
+                  "V_50%_N_I0pt6",
+                  "V_50%_N_I0pt8",
+                  "V_50%_S_I0",
+                  "V_50%_S_I0pt4",
+                  "V_50%_S_I0pt6",
+                  "V_50%_S_I0pt8"
+                ]
+              },
+              "display_name": "iqe",
+              "display_name_short": "iqe",
+              "variable_type": "variable",
+              "minimum": "",
+              "maximum": "",
+              "static_value": "Tr_0pt5%_N_I0",
+              "uuid": "",
+              "version_uuid": "",
+              "variable": true,
+              "uncertainty_description": {
+                "type": "discrete",
+                "attributes": [
+                  {
+                    "name": "discrete",
+                    "values_and_weights": [
+                      {
+                        "value": "Tr_0pt5%_N_I0",
+                        "weight": 0.25
+                      },
+                      {
+                        "value": "Tr_5%_N_I0",
+                        "weight": 0.25
+                      },
+                      {
+                        "value": "V_0pt5%_N_I0",
+                        "weight": 0.25
+                      },
+                      {
+                        "value": "V_5%_N_I0",
+                        "weight": 0.25
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lower_bounds",
+                    "value": ""
+                  },
+                  {
+                    "name": "upper_bounds",
+                    "value": ""
+                  },
+                  {
+                    "name": "modes",
+                    "value": ""
+                  },
+                  {
+                    "name": "delta_x",
+                    "value": ""
+                  },
+                  {
+                    "name": "stddev",
+                    "value": ""
+                  }
+                ]
+              },
+              "workflow_index": 0
+            }
+          ],
+          "workflow_index": 3
+        },
+        {
+          "name": "add_output_variable",
+          "display_name": "Add Output Variable",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "AddOutputVariable",
+          "measure_definition_directory": "./measures/AddOutputVariable",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\AddOutputVariable",
+          "measure_definition_display_name": "Add Output Variable",
+          "measure_definition_name": "add_output_variable",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "2a058afb-e349-49ae-a4bf-2c56a42b4352",
+          "measure_definition_version_uuid": "3eecceae-5a6f-4d69-ab65-567f9ffeb8b3",
+          "uuid": "2a058afb-e349-49ae-a4bf-2c56a42b4352",
+          "version_uuid": "3eecceae-5a6f-4d69-ab65-567f9ffeb8b3",
+          "description": "This measure adds an output variable at the requested reporting frequency.",
+          "taxonomy": "Reporting.QAQC",
+          "arguments": [
+            {
+              "display_name": "Enter Variable Name",
+              "display_name_short": "variable_name",
+              "name": "variable_name",
+              "value_type": "string",
+              "default_value": "Generator Produced DC Electricity Energy",
+              "value": "Generator Produced DC Electricity Energy"
+            },
+            {
+              "display_name": "Reporting Frequency",
+              "display_name_short": "reporting_frequency",
+              "name": "reporting_frequency",
+              "value_type": "string",
+              "default_value": "hourly",
+              "value": "hourly"
+            },
+            {
+              "display_name": "Enter Key Name",
+              "display_name_short": "key_value",
+              "name": "key_value",
+              "value_type": "string",
+              "default_value": "*",
+              "value": "*"
+            }
+          ],
+          "variables": [],
+          "workflow_index": 4
+        },
+        {
+          "name": "add_output_variable_2",
+          "display_name": "Add Output Variable 2",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "AddOutputVariable",
+          "measure_definition_directory": "./measures/AddOutputVariable",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\AddOutputVariable",
+          "measure_definition_display_name": "Add Output Variable 2",
+          "measure_definition_name": "add_output_variable_2",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "2a058afb-e349-49ae-a4bf-2c56a42b4352",
+          "measure_definition_version_uuid": "3eecceae-5a6f-4d69-ab65-567f9ffeb8b3",
+          "uuid": "2a058afb-e349-49ae-a4bf-2c56a42b4352",
+          "version_uuid": "3eecceae-5a6f-4d69-ab65-567f9ffeb8b3",
+          "description": "This measure adds an output variable at the requested reporting frequency.",
+          "taxonomy": "Reporting.QAQC",
+          "arguments": [
+            {
+              "display_name": "Enter Variable Name",
+              "display_name_short": "variable_name",
+              "name": "variable_name",
+              "value_type": "string",
+              "default_value": "Generator Produced DC Electricity Energy",
+              "value": "Generator Produced DC Electricity Energy"
+            },
+            {
+              "display_name": "Reporting Frequency",
+              "display_name_short": "reporting_frequency",
+              "name": "reporting_frequency",
+              "value_type": "string",
+              "default_value": "hourly",
+              "value": "monthly"
+            },
+            {
+              "display_name": "Enter Key Name",
+              "display_name_short": "key_value",
+              "name": "key_value",
+              "value_type": "string",
+              "default_value": "*",
+              "value": "*"
+            }
+          ],
+          "variables": [],
+          "workflow_index": 5
+        },
+        {
+          "name": "add_output_variable_2_2",
+          "display_name": "Add Output Variable 2 2",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "AddOutputVariable",
+          "measure_definition_directory": "./measures/AddOutputVariable",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\AddOutputVariable",
+          "measure_definition_display_name": "Add Output Variable 2 2",
+          "measure_definition_name": "add_output_variable_2_2",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "2a058afb-e349-49ae-a4bf-2c56a42b4352",
+          "measure_definition_version_uuid": "3eecceae-5a6f-4d69-ab65-567f9ffeb8b3",
+          "uuid": "2a058afb-e349-49ae-a4bf-2c56a42b4352",
+          "version_uuid": "3eecceae-5a6f-4d69-ab65-567f9ffeb8b3",
+          "description": "This measure adds an output variable at the requested reporting frequency.",
+          "taxonomy": "Reporting.QAQC",
+          "arguments": [
+            {
+              "display_name": "Enter Variable Name",
+              "display_name_short": "variable_name",
+              "name": "variable_name",
+              "value_type": "string",
+              "default_value": "Lights Electricity Energy",
+              "value": "Lights Electricity Energy"
+            },
+            {
+              "display_name": "Reporting Frequency",
+              "display_name_short": "reporting_frequency",
+              "name": "reporting_frequency",
+              "value_type": "string",
+              "default_value": "hourly",
+              "value": "hourly"
+            },
+            {
+              "display_name": "Enter Key Name",
+              "display_name_short": "key_value",
+              "name": "key_value",
+              "value_type": "string",
+              "default_value": "*",
+              "value": "*"
+            }
+          ],
+          "variables": [],
+          "workflow_index": 6
+        },
+        {
+          "name": "add_output_variable_2_2_2",
+          "display_name": "Add Output Variable 2 2 2",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "AddOutputVariable",
+          "measure_definition_directory": "./measures/AddOutputVariable",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\AddOutputVariable",
+          "measure_definition_display_name": "Add Output Variable 2 2 2",
+          "measure_definition_name": "add_output_variable_2_2_2",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "2a058afb-e349-49ae-a4bf-2c56a42b4352",
+          "measure_definition_version_uuid": "3eecceae-5a6f-4d69-ab65-567f9ffeb8b3",
+          "uuid": "2a058afb-e349-49ae-a4bf-2c56a42b4352",
+          "version_uuid": "3eecceae-5a6f-4d69-ab65-567f9ffeb8b3",
+          "description": "This measure adds an output variable at the requested reporting frequency.",
+          "taxonomy": "Reporting.QAQC",
+          "arguments": [
+            {
+              "display_name": "Enter Variable Name",
+              "display_name_short": "variable_name",
+              "name": "variable_name",
+              "value_type": "string",
+              "default_value": "Lights Electricity Energy",
+              "value": "Lights Electricity Energy"
+            },
+            {
+              "display_name": "Reporting Frequency",
+              "display_name_short": "reporting_frequency",
+              "name": "reporting_frequency",
+              "value_type": "string",
+              "default_value": "hourly",
+              "value": "monthly"
+            },
+            {
+              "display_name": "Enter Key Name",
+              "display_name_short": "key_value",
+              "name": "key_value",
+              "value_type": "string",
+              "default_value": "*",
+              "value": "*"
+            }
+          ],
+          "variables": [],
+          "workflow_index": 7
+        },
+        {
+          "name": "add_meter",
+          "display_name": "Add Meter",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "AddMeter",
+          "measure_definition_directory": "./measures/AddMeter",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\AddMeter",
+          "measure_definition_display_name": "Add Meter",
+          "measure_definition_name": "add_meter",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "ad4015f2-6d1d-4bb2-84b1-db47bc67a5b2",
+          "measure_definition_version_uuid": "a235b313-8272-4538-a1b3-6b016de9b615",
+          "uuid": "ad4015f2-6d1d-4bb2-84b1-db47bc67a5b2",
+          "version_uuid": "a235b313-8272-4538-a1b3-6b016de9b615",
+          "description": "This measure adds an meter at the requested reporting frequency.",
+          "taxonomy": "Reporting.QAQC",
+          "arguments": [
+            {
+              "display_name": "Enter Meter Name",
+              "display_name_short": "meter_name",
+              "name": "meter_name",
+              "value_type": "string",
+              "default_value": "Electricity:Facility",
+              "value": "Electricity:Facility"
+            },
+            {
+              "display_name": "Reporting Frequency",
+              "display_name_short": "reporting_frequency",
+              "name": "reporting_frequency",
+              "value_type": "string",
+              "default_value": "hourly",
+              "value": "monthly"
+            }
+          ],
+          "variables": [],
+          "workflow_index": 8
+        },
+        {
+          "name": "add_meter_2",
+          "display_name": "Add Meter 2",
+          "measure_type": "RubyMeasure",
+          "measure_definition_class_name": "AddMeter",
+          "measure_definition_directory": "./measures/AddMeter",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\AddMeter",
+          "measure_definition_display_name": "Add Meter 2",
+          "measure_definition_name": "add_meter_2",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "ad4015f2-6d1d-4bb2-84b1-db47bc67a5b2",
+          "measure_definition_version_uuid": "a235b313-8272-4538-a1b3-6b016de9b615",
+          "uuid": "ad4015f2-6d1d-4bb2-84b1-db47bc67a5b2",
+          "version_uuid": "a235b313-8272-4538-a1b3-6b016de9b615",
+          "description": "This measure adds an meter at the requested reporting frequency.",
+          "taxonomy": "Reporting.QAQC",
+          "arguments": [
+            {
+              "display_name": "Enter Meter Name",
+              "display_name_short": "meter_name",
+              "name": "meter_name",
+              "value_type": "string",
+              "default_value": "Electricity:Facility",
+              "value": "NaturalGas:Facility"
+            },
+            {
+              "display_name": "Reporting Frequency",
+              "display_name_short": "reporting_frequency",
+              "name": "reporting_frequency",
+              "value_type": "string",
+              "default_value": "hourly",
+              "value": "monthly"
+            }
+          ],
+          "variables": [],
+          "workflow_index": 9
+        },
+        {
+          "name": "a_inject_window_specific_idf_objects",
+          "display_name": " Inject Window Specific IDF Objects",
+          "measure_type": "EnergyPlusMeasure",
+          "measure_definition_class_name": "AInjectWindowSpecificIDFObjects",
+          "measure_definition_directory": "./measures/a_inject_window_specific_idf_objects",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\a_inject_window_specific_idf_objects",
+          "measure_definition_display_name": " Inject Window Specific IDF Objects",
+          "measure_definition_name": "a_inject_window_specific_idf_objects",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "b5cd7571-8ee9-4657-845b-43513fd2b983",
+          "measure_definition_version_uuid": "3cc095c6-ebdd-4aff-b500-472eafb6bf4a",
+          "uuid": "b5cd7571-8ee9-4657-845b-43513fd2b983",
+          "version_uuid": "3cc095c6-ebdd-4aff-b500-472eafb6bf4a",
+          "description": "This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus.",
+          "taxonomy": "Envelope.Fenestration",
+          "arguments": [
+            {
+              "display_name": "Choice of IGU",
+              "display_name_short": "glztype",
+              "name": "glztype",
+              "value_type": "string",
+              "default_value": "SwitchGlaze",
+              "value": "SwitchGlaze"
+            },
+            {
+              "display_name": "Choice of window",
+              "display_name_short": "choice",
+              "name": "choice",
+              "value_type": "string",
+              "default_value": "All fenestration surfaces",
+              "value": "All fenestration surfaces"
+            },
+            {
+              "display_name": "path to the folder that includes idf files containing window objects",
+              "display_name_short": "idf_path",
+              "name": "idf_path",
+              "value_type": "string",
+              "default_value": "C:\\SpectralIDFs",
+              "value": "C:\\SpectralIDFs"
+            },
+            {
+              "display_name": "Switching temperature of a thermochromic window",
+              "display_name_short": "t_switching",
+              "name": "t_switching",
+              "value_type": "double",
+              "default_value": 35,
+              "value": 35
+            },
+            {
+              "display_name": "Running on the server (and not in local)?",
+              "display_name_short": "serverrun",
+              "name": "serverrun",
+              "value_type": "boolean",
+              "default_value": false,
+              "value": true
+            }
+          ],
+          "variables": [],
+          "workflow_index": 10
+        },
+        {
+          "name": "window_pv_reporting",
+          "display_name": "WindowPV Reporting",
+          "measure_type": "ReportingMeasure",
+          "measure_definition_class_name": "WindowPVReporting",
+          "measure_definition_directory": "./measures/WindowPV_reporting",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\WindowPV_reporting",
+          "measure_definition_display_name": "WindowPV Reporting",
+          "measure_definition_name": "window_pv_reporting",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "431bcf0c-88e8-43be-97f6-40b274da8bd3",
+          "measure_definition_version_uuid": "d950bb25-cda3-46a7-8e28-8fb9a523406c",
+          "uuid": "431bcf0c-88e8-43be-97f6-40b274da8bd3",
+          "version_uuid": "d950bb25-cda3-46a7-8e28-8fb9a523406c",
+          "description": "Report PV",
+          "taxonomy": "Reporting.QAQC",
+          "arguments": [],
+          "variables": [],
+          "workflow_index": 11
+        },
+        {
+          "name": "server_directory_cleanup",
+          "display_name": "Server Directory Cleanup",
+          "measure_type": "ReportingMeasure",
+          "measure_definition_class_name": "ServerDirectoryCleanup",
+          "measure_definition_directory": "./measures/ServerDirectoryCleanup",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v12_PropertyCalculating\\measures\\ServerDirectoryCleanup",
+          "measure_definition_display_name": "Server Directory Cleanup",
+          "measure_definition_name": "server_directory_cleanup",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "ec7d04ad-0b7b-495b-825a-e1b6d28d1d3f",
+          "measure_definition_version_uuid": "95fce446-c6c5-4594-9332-6e3332b81ab1",
+          "uuid": "ec7d04ad-0b7b-495b-825a-e1b6d28d1d3f",
+          "version_uuid": "95fce446-c6c5-4594-9332-6e3332b81ab1",
+          "description": "Removes a significant portion of the saved results from each run, helping to alleviate memory problems.",
+          "taxonomy": "Reporting.Troubleshooting",
+          "arguments": [
+            {
+              "display_name": "Remove sql files from run directory",
+              "display_name_short": "sql",
+              "name": "sql",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove eso files from run directory",
+              "display_name_short": "eso",
+              "name": "eso",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove audit files from run directory",
+              "display_name_short": "audit",
+              "name": "audit",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove osm files from run directory",
+              "display_name_short": "osm",
+              "name": "osm",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove idf files from run directory",
+              "display_name_short": "idf",
+              "name": "idf",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove bnd files from run directory",
+              "display_name_short": "bnd",
+              "name": "bnd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove eio files from run directory",
+              "display_name_short": "eio",
+              "name": "eio",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove shd files from run directory",
+              "display_name_short": "shd",
+              "name": "shd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove mdd files from run directory",
+              "display_name_short": "mdd",
+              "name": "mdd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove rdd files from run directory",
+              "display_name_short": "rdd",
+              "name": "rdd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove csv files from run directory",
+              "display_name_short": "csv",
+              "name": "csv",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove Sizing Run Directories files from run directory",
+              "display_name_short": "Sizing Run Directories",
+              "name": "Sizing Run Directories",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            }
+          ],
+          "variables": [],
+          "workflow_index": 12
+        }
+      ],
+      "algorithm": {
+        "experiment_type": "full_factorial",
+        "number_of_samples": 5,
+        "seed": null,
+        "failed_f_value": 1000000000000000000,
+        "debug_messages": 0,
+        "objective_functions": []
+      },
+      "analysis_type": "doe"
+    },
+    "seed": {
+      "file_type": "OSM",
+      "path": "./seeds/blank.osm"
+    },
+    "weather_file": {
+      "file_type": "EPW",
+      "path": "./weather/DEU_Hamburg.101470_IWEC.epw"
+    },
+    "file_format_version": 1,
+    "cli_debug": "",
+    "cli_verbose": "",
+    "download_reports": true,
+    "download_osw": true,
+    "download_osm": true,
+    "download_zip": true,
+    "run_workflow_timeout": 28800,
+    "upload_results_timeout": 28800,
+    "initialize_worker_timeout": 28800,
+    "server_scripts": {}
+  }
+}

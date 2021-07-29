@@ -997,7 +997,7 @@
               "name": "use_upstream_args",
               "value_type": "boolean",
               "default_value": true,
-              "value": true
+              "value": false
             },
             {
               "display_name": "Find and replace option from existing weather file name.",
@@ -1205,7 +1205,7 @@
               "name": "single_floor_area",
               "value_type": "double",
               "default_value": 0,
-              "value": 18000
+              "value": 50000
             },
             {
               "display_name": "Typical Floor to FLoor Height",
@@ -1245,7 +1245,7 @@
               "name": "template",
               "value_type": "string",
               "default_value": "90.1-2004",
-              "value": "90.1-2007"
+              "value": "90.1-2010"
             },
             {
               "display_name": "Ratio of North/South Facade Length Relative to East/West Facade Length",
@@ -1645,7 +1645,7 @@
               "name": "template",
               "value_type": "string",
               "default_value": "90.1-2010",
-              "value": "90.1-2007"
+              "value": "90.1-2010"
             },
             {
               "display_name": "HVAC System Type",
@@ -2143,14 +2143,14 @@
           "measure_type": "EnergyPlusMeasure",
           "measure_definition_class_name": "AInjectWindowSpecificIDFObjects",
           "measure_definition_directory": "./measures/a_inject_window_specific_idf_objects",
-          "measure_definition_directory_local": "C:/Users/JKIM4/Documents/GitHub/SG_Measures/Measure_OS_3_0/a_inject_window_specific_idf_objects",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v1_Group1\\measures\\a_inject_window_specific_idf_objects",
           "measure_definition_display_name": " Inject Window Specific IDF Objects",
           "measure_definition_name": "a_inject_window_specific_idf_objects",
           "measure_definition_name_xml": null,
           "measure_definition_uuid": "b5cd7571-8ee9-4657-845b-43513fd2b983",
-          "measure_definition_version_uuid": "5fc78ae3-c26a-455c-ab6e-0d6bf095065b",
+          "measure_definition_version_uuid": "24676213-20e1-4e3a-b201-8416a662aebe",
           "uuid": "b5cd7571-8ee9-4657-845b-43513fd2b983",
-          "version_uuid": "5fc78ae3-c26a-455c-ab6e-0d6bf095065b",
+          "version_uuid": "24676213-20e1-4e3a-b201-8416a662aebe",
           "description": "This measure allows you to inject IDF objects into an OSM generated IDF prior to passing the IDF off to EnergyPlus.",
           "taxonomy": "Envelope.Fenestration",
           "arguments": [
@@ -2217,6 +2217,8 @@
                   "Hot_ASHRAE",
                   "Cold_ASHRAE",
                   "VeryCold_ASHRAE",
+                  "======================",
+                  "Tinted",
                   "======================",
                   "Tinted_25pct_N",
                   "======================",
@@ -2286,10 +2288,14 @@
                   "======================",
                   "SwitchGlaze",
                   "======================",
-                  "VeryHot_SwitchGlaze",
-                  "Hot_SwitchGlaze",
-                  "Cold_SwitchGlaze",
-                  "VeryCold_SwitchGlaze",
+                  "0pt5pct_N_IQE0",
+                  "0pt5pct_N_IQE0pt4",
+                  "0pt5pct_N_IQE0pt6",
+                  "0pt5pct_N_IQE0pt8",
+                  "5pct_N_IQE0",
+                  "5pct_N_IQE0pt4",
+                  "5pct_N_IQE0pt6",
+                  "5pct_N_IQE0pt8",
                   "======================",
                   "Old Windows",
                   "======================",
@@ -2395,6 +2401,123 @@
           "arguments": [],
           "variables": [],
           "workflow_index": 10
+        },
+        {
+          "name": "server_directory_cleanup",
+          "display_name": "Server Directory Cleanup",
+          "measure_type": "ReportingMeasure",
+          "measure_definition_class_name": "ServerDirectoryCleanup",
+          "measure_definition_directory": "./measures/ServerDirectoryCleanup",
+          "measure_definition_directory_local": "C:\\Users\\JKIM4\\Documents\\GitHub\\PAT_SwitchGlaze\\SG_v1_Group1\\measures\\ServerDirectoryCleanup",
+          "measure_definition_display_name": "Server Directory Cleanup",
+          "measure_definition_name": "server_directory_cleanup",
+          "measure_definition_name_xml": null,
+          "measure_definition_uuid": "ec7d04ad-0b7b-495b-825a-e1b6d28d1d3f",
+          "measure_definition_version_uuid": "95fce446-c6c5-4594-9332-6e3332b81ab1",
+          "uuid": "ec7d04ad-0b7b-495b-825a-e1b6d28d1d3f",
+          "version_uuid": "95fce446-c6c5-4594-9332-6e3332b81ab1",
+          "description": "Removes a significant portion of the saved results from each run, helping to alleviate memory problems.",
+          "taxonomy": "Reporting.Troubleshooting",
+          "arguments": [
+            {
+              "display_name": "Remove sql files from run directory",
+              "display_name_short": "sql",
+              "name": "sql",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove eso files from run directory",
+              "display_name_short": "eso",
+              "name": "eso",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove audit files from run directory",
+              "display_name_short": "audit",
+              "name": "audit",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove osm files from run directory",
+              "display_name_short": "osm",
+              "name": "osm",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove idf files from run directory",
+              "display_name_short": "idf",
+              "name": "idf",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove bnd files from run directory",
+              "display_name_short": "bnd",
+              "name": "bnd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove eio files from run directory",
+              "display_name_short": "eio",
+              "name": "eio",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove shd files from run directory",
+              "display_name_short": "shd",
+              "name": "shd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove mdd files from run directory",
+              "display_name_short": "mdd",
+              "name": "mdd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove rdd files from run directory",
+              "display_name_short": "rdd",
+              "name": "rdd",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove csv files from run directory",
+              "display_name_short": "csv",
+              "name": "csv",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            },
+            {
+              "display_name": "Remove Sizing Run Directories files from run directory",
+              "display_name_short": "Sizing Run Directories",
+              "name": "Sizing Run Directories",
+              "value_type": "boolean",
+              "default_value": true,
+              "value": true
+            }
+          ],
+          "variables": [],
+          "workflow_index": 11
         }
       ],
       "algorithm": {

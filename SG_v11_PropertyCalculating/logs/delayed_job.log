@@ -1,0 +1,21 @@
+# Logfile created on 2021-07-28 09:12:34 -0600 by logger.rb/61378
+[09:12:57.528334 INFO] 2021-07-28T09:12:57-0600: [Worker(delayed_job.server host:JKIM4-33723S pid:15044)] Starting job worker
+[09:12:57.531168 INFO] 2021-07-28T09:12:57-0600: [Worker(delayed_job.server host:JKIM4-33723S pid:15044)] Error while reserving job: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1:27017)
+[09:12:57.782679 INFO] 2021-07-28T09:12:57-0600: [Worker(delayed_job.worker_1 host:JKIM4-33723S pid:8352)] Starting job worker
+[09:12:57.785498 INFO] 2021-07-28T09:12:57-0600: [Worker(delayed_job.worker_1 host:JKIM4-33723S pid:8352)] Error while reserving job: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1:27017)
+[09:13:15.859013 INFO] 2021-07-28T09:13:15-0600: [Worker(delayed_job.worker_2 host:JKIM4-33723S pid:18916)] Starting job worker
+[09:13:15.861367 INFO] 2021-07-28T09:13:15-0600: [Worker(delayed_job.worker_2 host:JKIM4-33723S pid:18916)] Error while reserving job: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1:27017)
+[09:13:36.867566 INFO] 2021-07-28T09:13:36-0600: [Worker(delayed_job.worker_3 host:JKIM4-33723S pid:11140)] Starting job worker
+[09:13:36.870184 INFO] 2021-07-28T09:13:36-0600: [Worker(delayed_job.worker_3 host:JKIM4-33723S pid:11140)] Error while reserving job: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1:27017)
+[09:13:57.073838 INFO] 2021-07-28T09:13:57-0600: [Worker(delayed_job.worker_4 host:JKIM4-33723S pid:18792)] Starting job worker
+[09:13:57.077414 INFO] 2021-07-28T09:13:57-0600: [Worker(delayed_job.worker_4 host:JKIM4-33723S pid:18792)] Error while reserving job: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1:27017)
+[09:14:19.552588 INFO] 2021-07-28T09:14:19-0600: [Worker(delayed_job.worker_5 host:JKIM4-33723S pid:21324)] Starting job worker
+[09:14:19.554999 INFO] 2021-07-28T09:14:19-0600: [Worker(delayed_job.worker_5 host:JKIM4-33723S pid:21324)] Error while reserving job: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1:27017)
+[09:14:37.563335 INFO] 2021-07-28T09:14:37-0600: [Worker(delayed_job.worker_6 host:JKIM4-33723S pid:17492)] Starting job worker
+[09:14:37.566214 INFO] 2021-07-28T09:14:37-0600: [Worker(delayed_job.worker_6 host:JKIM4-33723S pid:17492)] Error while reserving job: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1:27017)
+[09:14:58.284072 INFO] 2021-07-28T09:14:58-0600: [Worker(delayed_job.worker_7 host:JKIM4-33723S pid:17276)] Starting job worker
+[09:14:58.287119 INFO] 2021-07-28T09:14:58-0600: [Worker(delayed_job.worker_7 host:JKIM4-33723S pid:17276)] Error while reserving job: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1:27017)
+[09:15:19.025612 INFO] 2021-07-28T09:15:19-0600: [Worker(delayed_job.worker_8 host:JKIM4-33723S pid:19024)] Starting job worker
+[09:15:19.028146 INFO] 2021-07-28T09:15:19-0600: [Worker(delayed_job.worker_8 host:JKIM4-33723S pid:19024)] Error while reserving job: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1:27017)
+[09:15:37.959112 INFO] 2021-07-28T09:15:37-0600: [Worker(delayed_job.worker_9 host:JKIM4-33723S pid:13140)] Starting job worker
+[09:15:37.962161 INFO] 2021-07-28T09:15:37-0600: [Worker(delayed_job.worker_9 host:JKIM4-33723S pid:13140)] Error while reserving job: IOError: closed stream (for 127.0.0.1:27017 (no TLS)) (on 127.0.0.1:27017)
